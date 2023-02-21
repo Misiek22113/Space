@@ -1,0 +1,128 @@
+@import "../../styles/constants.scss";
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  top: 0;
+  position: fixed;
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    padding-left: 2rem;
+  }
+
+  #compass-icon-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .primary-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 5rem;
+    color: $neutral-color-95;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-top: 1.2rem;
+    height: 4rem;
+    // background-color: hsl(0, 0%, 25%, 0.4);
+    background-color: $navbar-background-color;
+    backdrop-filter: blur(0.1rem);
+    font-size: 1.3rem;
+  }
+
+  .list-element {
+    color: $neutral-color-95;
+  }
+
+  .list-element:hover {
+    text-decoration-line: underline;
+    text-decoration-line: $neutral-color-95;
+  }
+
+  .nav-text {
+    list-style-type: circle;
+    color: $neutral-color-95;
+    cursor: pointer;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-screen-size) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 4rem;
+      height: 4rem;
+      cursor: pointer;
+      padding-left: 2rem;
+    }
+
+    button {
+      display: block;
+    }
+
+    #compass-icon {
+      margin-top: 1.25rem;
+    }
+
+    .primary-navigation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      height: 100%;
+      width: 30%;
+      right: 0;
+      top: 0;
+      margin: 0;
+      transform: translateX(100%);
+      transition: 0.3s;
+    }
+
+    .primary-navigation[data-is-active="true"] {
+      transform: translateX(0%);
+      transition: 0.3s;
+    }
+
+    .list-element {
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 2rem;
+    }
+
+    .toggle-button-burger {
+      background: url("burger.svg");
+      z-index: 9999;
+      background-repeat: no-repeat;
+      width: 48px;
+      border: 0;
+      aspect-ratio: 1;
+      margin-top: 1.25rem;
+      margin-right: 2rem;
+    }
+
+    .toggle-button-close {
+      background: url("close.svg");
+      z-index: 9999;
+      background-repeat: no-repeat;
+      width: 48px;
+      border: 0;
+      aspect-ratio: 1;
+      margin-top: 1.25rem;
+      margin-right: 2rem;
+    }
+  }
+}
