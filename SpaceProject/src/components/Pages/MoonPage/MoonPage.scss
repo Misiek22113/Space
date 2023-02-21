@@ -1,0 +1,5 @@
+@import "../../../styles/constants.scss";
+
+.background-moon {
+  @include page-background-image("../../../assets/MoonPageImages/StarsV2.jpg");
+}

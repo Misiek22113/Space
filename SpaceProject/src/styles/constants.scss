@@ -9,3 +9,11 @@ $navbar-background-color: hsl(0, 0%, 05%, 0.5);
 $primary-font-weight: 400;
 
 $mobile-screen-size: 65em;
+
+@mixin page-background-image($url-path: "./") {
+  background: url($url-path);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

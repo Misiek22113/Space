@@ -7,6 +7,10 @@
   align-items: center;
   gap: 3rem;
 
+  @include page-background-image(
+    "../../../assets/HomePageImages/Home_PageV2.jpg"
+  );
+
   .home-info-section {
     margin-top: 9rem;
   }

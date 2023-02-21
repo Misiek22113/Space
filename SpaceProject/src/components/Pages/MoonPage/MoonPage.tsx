@@ -1,5 +1,13 @@
+import Navbar from "../../Navbar/Navbar";
+import "./MoonPage.scss";
+
 const MoonPage = () => {
-  return <h1>MoonPage</h1>;
+  return (
+    <div className="background-moon">
+      <Navbar />
+      {/* <h1>MoonPage</h1> */}
+    </div>
+  );
 };
 
 export default MoonPage;
