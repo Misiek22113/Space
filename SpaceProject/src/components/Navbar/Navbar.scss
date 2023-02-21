@@ -31,7 +31,6 @@
     padding-left: 4rem;
     margin-top: 1.2rem;
     height: 4rem;
-    // background-color: hsl(0, 0%, 25%, 0.4);
     background-color: $navbar-background-color;
     backdrop-filter: blur(0.1rem);
     font-size: 1.3rem;
@@ -89,18 +88,17 @@
       top: 0;
       margin: 0;
       transform: translateX(100%);
-      transition: 0.3s;
+      transition: 0.2s;
     }
 
     .primary-navigation[data-is-active="true"] {
       transform: translateX(0%);
-      transition: 0.3s;
+      transition: 0.2s;
     }
 
     .list-element {
       text-align: left;
       align-self: flex-start;
-      margin-left: 2rem;
     }
 
     .toggle-button-burger {
@@ -112,6 +110,7 @@
       aspect-ratio: 1;
       margin-top: 1.25rem;
       margin-right: 2rem;
+      transition: 0.2s;
     }
 
     .toggle-button-close {
@@ -123,6 +122,7 @@
       aspect-ratio: 1;
       margin-top: 1.25rem;
       margin-right: 2rem;
+      transition: 0.2s;
     }
   }
 }

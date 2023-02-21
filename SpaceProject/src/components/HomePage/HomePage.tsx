@@ -11,14 +11,6 @@ const HomePage = () => {
         <HomeInfo />
       </div>
       <button className={`${Button.circle}`}>EXPLORE</button>
-      <h1>SCROLL</h1>
-      <h1>SCROLL</h1>
-      <h1>SCROLL</h1>
-      <h1>SCROLL</h1>
-      <h1>SCROLL</h1>
-      <h1>SCROLL</h1>
-      <h1>SCROLL</h1>
-      <h1>SCROLL</h1>
     </div>
   );
 };

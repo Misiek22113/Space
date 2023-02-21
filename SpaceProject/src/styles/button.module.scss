@@ -7,9 +7,9 @@ $tranistion-on-click: 0.1s;
   border: 1px solid $neutral-color-90;
   border-radius: 50%;
   background-color: $neutral-color-90;
-  width: min(12rem, 15rem);
-  height: min(12rem, 15rem);
-  font-size: 1.4rem;
+  width: 25vh;
+  aspect-ratio: 1;
+  font-size: 2rem;
   font-family: inherit;
   cursor: pointer;
   transition: $tranistion-time;
@@ -24,5 +24,13 @@ $tranistion-on-click: 0.1s;
     background-color: $neutral-color-95;
     border-color: $neutral-color-95;
     transition: $tranistion-on-click;
+  }
+}
+
+@media (max-width: $mobile-screen-size) {
+  .circle {
+    width: 20vh;
+    aspect-ratio: 1;
+    font-size: 1.6rem;
   }
 }
