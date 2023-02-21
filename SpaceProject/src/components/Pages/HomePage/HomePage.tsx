@@ -1,7 +1,7 @@
-import HomeInfo from "../HomeInfo/HomeInfo";
+import HomeInfo from "../../HomeInfo/HomeInfo";
 import "./HomePage.scss";
-import Button from "../../styles/button.module.scss";
-import Navbar from "../Navbar/Navbar";
+import Button from "../../../styles/button.module.scss";
+import Navbar from "../../Navbar/Navbar";
 
 const HomePage = () => {
   return (
