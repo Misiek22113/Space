@@ -1,0 +1,9 @@
+@import "../../styles/constants.scss";
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}

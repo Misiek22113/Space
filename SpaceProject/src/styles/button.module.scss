@@ -1,0 +1,28 @@
+@import "./constants.scss";
+
+$tranistion-time: 0.2s;
+$tranistion-on-click: 0.1s;
+
+.circle {
+  border: 1px solid $neutral-color-90;
+  border-radius: 50%;
+  background-color: $neutral-color-90;
+  width: min(12rem, 15rem);
+  height: min(12rem, 15rem);
+  font-size: 1.4rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: $tranistion-time;
+
+  &:hover {
+    border-color: $neutral-color-85;
+    background-color: $neutral-color-85;
+    transition: $tranistion-time;
+  }
+
+  &:active {
+    background-color: $neutral-color-95;
+    border-color: $neutral-color-95;
+    transition: $tranistion-on-click;
+  }
+}

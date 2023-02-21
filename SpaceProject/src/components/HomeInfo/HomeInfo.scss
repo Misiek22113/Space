@@ -1,0 +1,32 @@
+@import "../../styles/constants.scss";
+
+$space-text-font-weight: 500;
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $neutral-color-95;
+
+  .top-text {
+    // width: 25rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .bottom-text {
+    display: flex;
+    width: 26rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .space-text {
+    font-weight: $space-text-font-weight;
+    font-size: 3rem;
+    margin: 1.3rem;
+  }
+}
