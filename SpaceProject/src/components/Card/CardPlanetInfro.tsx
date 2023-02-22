@@ -2,7 +2,7 @@ export default interface CardPlanetInfo {
   planet: string;
   overview: string;
   distance: number;
-  weight: number;
+  weigh: number;
   age: number;
   planetImgPath: string;
 }

@@ -5,7 +5,7 @@ const Card = ({
   planet,
   overview,
   distance,
-  weight,
+  weigh,
   age,
   planetImgPath,
 }: CardPlanetInfo) => {
@@ -15,7 +15,7 @@ const Card = ({
         <h1>{planet}</h1>
       </div>
       <div className="planet-img-container">
-        <img src="/planets/sun.png"></img>
+        <img src={`/planets/${planetImgPath}`}></img>
       </div>
       <div className="information-container">
         <div className="planet-overview">
@@ -27,7 +27,7 @@ const Card = ({
             <h3 className="measure-text">million kolometers</h3>
           </div>
           <div className="single-planet-figure">
-            <h3>{weight}</h3>
+            <h3>{weigh}</h3>
             <h3 className="measure-text">times Earth</h3>
           </div>
           <div className="single-planet-figure">
