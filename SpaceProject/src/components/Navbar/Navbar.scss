@@ -91,7 +91,7 @@
       transition: 0.2s;
     }
 
-    .primary-navigation[data-is-active="true"] {
+    .primary-navigation[data-is-active="false"] {
       transform: translateX(0%);
       transition: 0.2s;
     }

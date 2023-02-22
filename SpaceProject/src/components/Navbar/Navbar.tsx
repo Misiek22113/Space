@@ -22,9 +22,7 @@ const Navbar = () => {
       <button
         onClick={handleBurgerClick}
         className={
-          burgerVisible == false
-            ? "toggle-button-burger"
-            : "toggle-button-close"
+          burgerVisible == true ? "toggle-button-burger" : "toggle-button-close"
         }
       ></button>
       <ul className="primary-navigation" data-is-active={`${burgerVisible}`}>
