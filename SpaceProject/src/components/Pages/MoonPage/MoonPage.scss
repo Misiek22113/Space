@@ -1,5 +1,20 @@
 @import "../../../styles/constants.scss";
 
 .background-moon {
-  @include page-background-image("../../../assets/MoonPageImages/StarsV2.jpg");
+  @include page-background-image(
+    "../../../assets/MoonPageImages/moon_page_background.jpg"
+  );
+  background-repeat: repeat;
+
+  .card-section {
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: $mobile-screen-size) {
+  .background-moon {
+    .card-section {
+      padding-top: 4rem;
+    }
+  }
 }
