@@ -1,0 +1,22 @@
+@import "../../../styles/constants.scss";
+
+.solar-system-background {
+  background: url("../../../../public/planets/gwiazdyV2.jpg");
+  position: fixed;
+  background-size: auto;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.planet-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+
+  .sun-card {
+    padding-top: 20vh;
+  }
+}

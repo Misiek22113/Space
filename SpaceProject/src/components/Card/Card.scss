@@ -1,17 +1,14 @@
 @import "../../styles/constants.scss";
 
-.card-container {
+@mixin card-components {
   color: $neutral-color-95;
   display: grid;
-  grid-template-columns: 3fr 5fr;
   padding: 0 3rem;
   gap: 1rem;
-  height: 1vh;
 
   .planet-name {
     font-size: 4.5vh;
     text-align: center;
-    grid-area: 1 / 2;
 
     h1 {
       font-weight: $primary-font-weight;
@@ -23,6 +20,7 @@
   .planet-img-container {
     grid-row: span 2;
     text-align: center;
+    align-self: center;
 
     img {
       width: 60vh;
@@ -32,8 +30,6 @@
   .information-container {
     display: flex;
     flex-direction: column;
-
-    grid-area: 2 / 2;
 
     .planet-overview {
       display: flex;
@@ -76,6 +72,25 @@
       }
     }
   }
+}
+
+.card-container-left {
+  grid-template-columns: 3fr 5fr;
+
+  .information-container {
+    grid-area: 2 / 2;
+  }
+
+  .planet-name {
+    grid-area: 1 / 2;
+  }
+  @include card-components;
+}
+
+.card-container-right {
+  grid-template-columns: 5fr 3fr;
+
+  @include card-components;
 }
 
 @media (max-width: 90em) {

@@ -8,9 +8,14 @@ const Card = ({
   weigh,
   age,
   planetImgPath,
+  onRight,
 }: CardPlanetInfo) => {
   return (
-    <div className="card-container">
+    <div
+      className={
+        onRight === true ? "card-container-right" : "card-container-left"
+      }
+    >
       <div className="planet-name">
         <h1>{planet}</h1>
       </div>

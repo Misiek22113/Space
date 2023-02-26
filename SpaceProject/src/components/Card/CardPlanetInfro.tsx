@@ -5,4 +5,5 @@ export default interface CardPlanetInfo {
   weigh: number;
   age: number;
   planetImgPath: string;
+  onRight: boolean;
 }

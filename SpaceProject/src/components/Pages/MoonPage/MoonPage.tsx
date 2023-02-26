@@ -15,6 +15,7 @@ const MoonPage = () => {
           weigh={MOON.weigh}
           age={MOON.age}
           planetImgPath={MOON.planetImgPath}
+          onRight={true}
         />
       </div>
 
