@@ -4,10 +4,9 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  top: 0;
   position: fixed;
 
-  img {
+  #compass-icon {
     width: 4rem;
     height: 4rem;
     cursor: pointer;
@@ -22,7 +21,6 @@
 
   .primary-navigation {
     display: flex;
-    flex-direction: row;
     justify-content: right;
     align-items: center;
     gap: 5rem;
@@ -74,13 +72,6 @@
     justify-content: space-between;
     align-items: center;
 
-    img {
-      width: 4rem;
-      height: 4rem;
-      cursor: pointer;
-      padding-left: 2rem;
-    }
-
     button {
       display: block;
     }
@@ -100,12 +91,12 @@
       top: 0;
       margin: 0;
       transform: translateX(100%);
-      transition: 0.2s;
+      transition: $tranistion-time;
     }
 
     .primary-navigation[data-is-active="false"] {
       transform: translateX(0%);
-      transition: 0.2s;
+      transition: $tranistion-time;
     }
 
     .list-element {
@@ -138,3 +129,5 @@
     }
   }
 }
+
+@mixin ();

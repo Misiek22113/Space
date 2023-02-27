@@ -25,6 +25,7 @@ const Navbar = () => {
         className={
           burgerVisible == true ? "toggle-button-burger" : "toggle-button-close"
         }
+        id="burger-button"
       ></button>
       <ul className="primary-navigation" data-is-active={`${burgerVisible}`}>
         <li className="list-element">
