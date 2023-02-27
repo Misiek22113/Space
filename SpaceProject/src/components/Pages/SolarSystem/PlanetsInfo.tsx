@@ -17,4 +17,4 @@ const VENUS = {
   planetImgPath: "venus.png",
 };
 
-export default SUN;
+export { SUN, VENUS };

@@ -1,5 +1,17 @@
 @import "../../styles/constants.scss";
 
+@mixin navbar-button-image($url-path: "") {
+  background: url($url-path);
+  z-index: 9999;
+  background-repeat: no-repeat;
+  width: 48px;
+  border: 0;
+  aspect-ratio: 1;
+  margin-top: 1.25rem;
+  margin-right: 2rem;
+  transition: $tranistion-time;
+}
+
 .nav-container {
   display: flex;
   width: 100%;
@@ -105,29 +117,11 @@
     }
 
     .toggle-button-burger {
-      background: url("burger.svg");
-      z-index: 9999;
-      background-repeat: no-repeat;
-      width: 48px;
-      border: 0;
-      aspect-ratio: 1;
-      margin-top: 1.25rem;
-      margin-right: 2rem;
-      transition: 0.2s;
+      @include navbar-button-image("burger.svg");
     }
 
     .toggle-button-close {
-      background: url("close.svg");
-      z-index: 9999;
-      background-repeat: no-repeat;
-      width: 48px;
-      border: 0;
-      aspect-ratio: 1;
-      margin-top: 1.25rem;
-      margin-right: 2rem;
-      transition: 0.2s;
+      @include navbar-button-image("close.svg");
     }
   }
 }
-
-@mixin ();

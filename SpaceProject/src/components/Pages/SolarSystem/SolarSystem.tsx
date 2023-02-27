@@ -1,5 +1,5 @@
 import Card from "../../Card/Card";
-import SUN from "./PlanetsInfo";
+import { SUN, VENUS } from "./PlanetsInfo";
 import "./SolarSystem.scss";
 
 const SolarSystem = () => {
@@ -28,11 +28,11 @@ const SolarSystem = () => {
           onRight={false}
         ></Card>
         <Card
-          planet={"VENUS"}
-          overview={SUN.overview}
-          distance={SUN.distance}
-          weigh={SUN.weigh}
-          age={SUN.weigh}
+          planet={VENUS.planet}
+          overview={VENUS.overview}
+          distance={VENUS.distance}
+          weigh={VENUS.weigh}
+          age={VENUS.weigh}
           planetImgPath={"venus.png"}
           onRight={true}
         ></Card>
