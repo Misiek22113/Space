@@ -1,5 +1,4 @@
 import Card from "../../Card/Card";
-import Navbar from "../../Navbar/Navbar";
 import SUN from "./PlanetsInfo";
 import "./SolarSystem.scss";
 
@@ -7,7 +6,6 @@ const SolarSystem = () => {
   return (
     <>
       <div className="solar-system-background"></div>
-      <Navbar />
       <div className="planet-section">
         <div className="sun-card">
           <Card

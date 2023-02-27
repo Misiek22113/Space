@@ -8,6 +8,8 @@ $navbar-background-color: hsl(0, 0%, 05%, 0.5);
 
 $primary-font-weight: 400;
 
+$tranistion-time: 0.2s;
+
 $mobile-screen-size: 65em;
 
 @mixin page-background-image($url-path: "./") {

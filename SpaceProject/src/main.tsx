@@ -5,19 +5,26 @@ import MoonPage from "./components/Pages/MoonPage/MoonPage";
 import SolarSystem from "./components/Pages/SolarSystem/SolarSystem";
 import "../styles/global.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./components/Pages/RootLayout/RootLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/moon",
-    element: <MoonPage />,
-  },
-  {
-    path: "/SolarSystem",
-    element: <SolarSystem />,
+    element: <RootLayout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/moon",
+        element: <MoonPage />,
+      },
+      {
+        path: "/SolarSystem",
+        element: <SolarSystem />,
+      },
+    ],
   },
 ]);
 

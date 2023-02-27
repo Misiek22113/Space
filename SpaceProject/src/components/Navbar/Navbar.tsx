@@ -3,6 +3,7 @@ import COMPAS from "./compas_filled.svg";
 import BURGER from "./burger.svg";
 import CLOSE from "./close.svg";
 import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [burgerVisible, setburgerVisible] = useState(true);
@@ -16,9 +17,9 @@ const Navbar = () => {
 
   return (
     <nav className="nav-container">
-      <a id="compass-icon-align">
+      <Link to="/" id="compass-icon-align">
         <img src={COMPAS} id="compass-icon"></img>
-      </a>
+      </Link>
       <button
         onClick={handleBurgerClick}
         className={
@@ -27,13 +28,34 @@ const Navbar = () => {
       ></button>
       <ul className="primary-navigation" data-is-active={`${burgerVisible}`}>
         <li className="list-element">
-          <a className="nav-text">HOME</a>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-text-underlined" : "nav-text"
+            }
+          >
+            HOME
+          </NavLink>
         </li>
         <li className="list-element">
-          <a className="nav-text">SOLAR SYSTEM</a>
+          <NavLink
+            to="/SolarSystem"
+            className={({ isActive }) =>
+              isActive ? "nav-text-underlined" : "nav-text"
+            }
+          >
+            SOLAR SYSTEM
+          </NavLink>
         </li>
         <li className="list-element">
-          <a className="nav-text">HUMANS IN SPACE</a>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-text-underlined" : "nav-text"
+            }
+          >
+            HUMANS IN SPACE
+          </NavLink>
         </li>
       </ul>
     </nav>

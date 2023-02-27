@@ -1,12 +1,10 @@
 import Card from "../../Card/Card";
-import Navbar from "../../Navbar/Navbar";
 import "./MoonPage.scss";
 import MOON from "./MoonInfo";
 
 const MoonPage = () => {
   return (
     <div className="background-moon">
-      <Navbar />
       <div className="card-section">
         <Card
           planet={MOON.planet}
