@@ -71,11 +71,11 @@ const SolarSystem = () => {
           distance={SUN.distance}
           weigh={SUN.weigh}
           age={SUN.weigh}
-          planetImgPath={"Saturn_small.png"}
+          planetImgPath={"Saturn_without_ring.png"}
           onRight={true}
         ></Card>
         <Card
-          planet={"URAN"}
+          planet={"URANUS"}
           overview={SUN.overview}
           distance={SUN.distance}
           weigh={SUN.weigh}

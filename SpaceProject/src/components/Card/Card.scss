@@ -1,6 +1,6 @@
 @import "../../styles/constants.scss";
 
-@mixin card-components {
+@mixin card-components($direction: left) {
   color: $neutral-color-95;
   display: grid;
   padding: 0 3rem;
@@ -94,7 +94,8 @@
 }
 
 @media (max-width: 90em) {
-  .card-container {
+  .card-container-left,
+  .card-container-right {
     .planet-name {
       h1 {
         margin-top: 2rem;
@@ -115,7 +116,8 @@
 }
 
 @media (max-width: $mobile-screen-size) {
-  .card-container {
+  .card-container-left,
+  .card-container-right {
     color: $neutral-color-95;
     display: grid;
     flex-direction: column;
