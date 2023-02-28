@@ -57,7 +57,27 @@
         align-items: center;
         justify-content: center;
 
-        .measure-text {
+        .measure {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          color: rgb(238, 155, 0);
+
+          #planet-icon {
+            width: 2.4rem;
+            align-self: flex-end;
+            padding-bottom: 1rem;
+          }
+
+          .measure-text {
+            font-size: 2.2vh;
+            align-self: center;
+            margin-bottom: 0.5rem;
+            color: $neutral-color-95;
+          }
+        }
+
+        .description-text {
           margin: 0;
           font-size: 3vh;
           color: $neutral-color-80;
@@ -153,23 +173,32 @@
       }
 
       .planet-figures {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 2rem;
-        margin-bottom: 0;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        // padding-bottom: 1rem;
+        display: grid;
+        padding-top: 2rem;
+        gap: 1rem;
 
         .single-planet-figure {
+          flex-direction: column-reverse;
+
           h3 {
-            font-size: 3vh;
+            font-size: 3.7vh;
             margin-bottom: 0.5rem;
           }
 
-          .measure-text {
-            font-size: 2vh;
+          .measure {
+            align-items: center;
             text-align: center;
+
+            #planet-icon {
+              width: 2rem;
+              align-self: flex-end;
+              padding-bottom: 0.7rem;
+            }
+
+            .measure-text {
+              font-size: 2.2vh;
+              color: $neutral-color-95;
+            }
           }
         }
       }

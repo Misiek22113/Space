@@ -1,5 +1,15 @@
 import Card from "../../Card/Card";
-import { SUN, VENUS } from "./PlanetsInfo";
+import {
+  SUN,
+  VENUS,
+  MERCURY,
+  EARTH,
+  MARS,
+  JUPITER,
+  SATURN,
+  URANUS,
+  NEPTUNE,
+} from "./PlanetsInfo";
 import "./SolarSystem.scss";
 
 const SolarSystem = () => {
@@ -12,18 +22,18 @@ const SolarSystem = () => {
             planet={SUN.planet}
             overview={SUN.overview}
             distance={SUN.distance}
-            weigh={SUN.weigh}
-            age={SUN.weigh}
+            moons={SUN.moons}
+            years={SUN.years}
             planetImgPath={SUN.planetImgPath}
             onRight={true}
           ></Card>
         </div>
         <Card
           planet={"MERUCRY"}
-          overview={SUN.overview}
-          distance={SUN.distance}
-          weigh={SUN.weigh}
-          age={SUN.weigh}
+          overview={MERCURY.overview}
+          distance={MERCURY.distance}
+          moons={MERCURY.moons}
+          years={MERCURY.years}
           planetImgPath={"Mercury.png"}
           onRight={false}
         ></Card>
@@ -31,62 +41,62 @@ const SolarSystem = () => {
           planet={VENUS.planet}
           overview={VENUS.overview}
           distance={VENUS.distance}
-          weigh={VENUS.weigh}
-          age={VENUS.weigh}
+          moons={VENUS.moons}
+          years={VENUS.years}
           planetImgPath={"venus.png"}
           onRight={true}
         ></Card>
         <Card
           planet={"EARTH"}
-          overview={SUN.overview}
-          distance={SUN.distance}
-          weigh={SUN.weigh}
-          age={SUN.weigh}
+          overview={EARTH.overview}
+          distance={EARTH.distance}
+          moons={EARTH.moons}
+          years={EARTH.years}
           planetImgPath={"Earth_small.png"}
           onRight={false}
         ></Card>
         <Card
           planet={"MARS"}
-          overview={SUN.overview}
-          distance={SUN.distance}
-          weigh={SUN.weigh}
-          age={SUN.weigh}
+          overview={MARS.overview}
+          distance={MARS.distance}
+          moons={MARS.moons}
+          years={MARS.years}
           planetImgPath={"Mars_small.png"}
           onRight={true}
         ></Card>
         <Card
           planet={"JUPITER"}
-          overview={SUN.overview}
-          distance={SUN.distance}
-          weigh={SUN.weigh}
-          age={SUN.weigh}
+          overview={JUPITER.overview}
+          distance={JUPITER.distance}
+          moons={JUPITER.moons}
+          years={JUPITER.years}
           planetImgPath={"Jupiter_small.png"}
           onRight={false}
         ></Card>
         <Card
           planet={"SATURN"}
-          overview={SUN.overview}
-          distance={SUN.distance}
-          weigh={SUN.weigh}
-          age={SUN.weigh}
+          overview={SATURN.overview}
+          distance={SATURN.distance}
+          moons={SATURN.moons}
+          years={SATURN.years}
           planetImgPath={"Saturn_without_ring.png"}
           onRight={true}
         ></Card>
         <Card
           planet={"URANUS"}
-          overview={SUN.overview}
-          distance={SUN.distance}
-          weigh={SUN.weigh}
-          age={SUN.weigh}
+          overview={URANUS.overview}
+          distance={URANUS.distance}
+          moons={URANUS.moons}
+          years={URANUS.years}
           planetImgPath={"Uran_small.png"}
           onRight={false}
         ></Card>
         <Card
-          planet={"NEPTUN"}
-          overview={SUN.overview}
-          distance={SUN.distance}
-          weigh={SUN.weigh}
-          age={SUN.weigh}
+          planet={"NEPTUNE"}
+          overview={NEPTUNE.overview}
+          distance={NEPTUNE.distance}
+          moons={NEPTUNE.moons}
+          years={NEPTUNE.years}
           planetImgPath={"Neptun_small.png"}
           onRight={true}
         ></Card>

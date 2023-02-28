@@ -1,12 +1,13 @@
 import "./Card.scss";
 import CardPlanetInfo from "./CardPlanetInfro";
+import PLANET from "../../../public/planet.svg";
 
 const Card = ({
   planet,
   overview,
   distance,
-  weigh,
-  age,
+  moons,
+  years,
   planetImgPath,
   onRight,
 }: CardPlanetInfo) => {
@@ -28,16 +29,25 @@ const Card = ({
         </div>
         <div className="planet-figures">
           <div className="single-planet-figure">
-            <h3>{distance}</h3>
-            <h3 className="measure-text">million kolometers</h3>
+            <div className="measure">
+              <h3>{years}</h3>
+              <h3 className="measure-text">Earth Years</h3>
+            </div>
+            <h3 className="description-text">Length Of Year</h3>
           </div>
           <div className="single-planet-figure">
-            <h3>{weigh}</h3>
-            <h3 className="measure-text">times Earth</h3>
+            <div className="measure">
+              <h3>{distance}</h3>
+              <h3 className="measure-text">AU</h3>
+            </div>
+            <h3 className="description-text">Distance from sun</h3>
           </div>
           <div className="single-planet-figure">
-            <h3>{age}</h3>
-            <h3 className="measure-text">billion years</h3>
+            <div className="measure">
+              <h3>{moons}</h3>
+              <img src={PLANET} id="planet-icon"></img>
+            </div>
+            <h3 className="description-text">Moons</h3>
           </div>
         </div>
       </div>
