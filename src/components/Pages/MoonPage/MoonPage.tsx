@@ -10,8 +10,8 @@ const MoonPage = () => {
           planet={MOON.planet}
           overview={MOON.overview}
           distance={MOON.distance}
-          weigh={MOON.weigh}
-          age={MOON.age}
+          moons={MOON.weight}
+          years={MOON.age}
           planetImgPath={MOON.planetImgPath}
           onRight={true}
         />
