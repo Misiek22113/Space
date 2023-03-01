@@ -10,14 +10,26 @@
   @include page-background-image(
     "../../../assets/HomePageImages/Home_PageV2.jpg"
   );
+}
+
+.home-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 
   .home-info-section {
-    margin-top: 8rem;
+    margin-top: 11vh;
   }
 }
 
 @media (max-width: $mobile-screen-size) {
-  .background {
-    gap: 4rem;
+  .home-page-content {
+    gap: 3rem;
+
+    .home-info-section {
+      margin-top: 15vh;
+    }
   }
 }

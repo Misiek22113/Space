@@ -8,23 +8,23 @@ $space-text-font-weight: 500;
   justify-content: center;
   align-items: center;
   color: $neutral-color-95;
-  width: 80vh;
+  width: 60vw;
 
   .top-text {
-    font-size: 3.7vh;
+    font-size: clamp(2rem, 1rem + 2.5vw, 3.8rem);
     text-align: center;
     margin-bottom: 0;
   }
 
   .space-text {
     font-weight: $space-text-font-weight;
-    font-size: 6vh;
+    font-size: clamp(3.2rem, 1rem + 4vw, 5.5rem);
     margin: 1.3rem;
   }
 
   .bottom-text {
     display: flex;
-    font-size: 3.5vh;
+    font-size: clamp(1.8rem, 0.1rem + 2vw, 3.2rem);
     text-align: center;
     margin-top: 0;
   }
