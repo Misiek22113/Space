@@ -16,6 +16,17 @@
   flex-direction: column;
   gap: 10rem;
 
+  .earth-section {
+    .moon-img {
+      width: clamp(4rem, 1rem + 4vw, 8rem);
+      position: relative;
+      left: 6rem;
+      top: 4rem;
+      z-index: 10;
+      cursor: pointer;
+    }
+  }
+
   .sun-card {
     padding-top: 20vh;
   }

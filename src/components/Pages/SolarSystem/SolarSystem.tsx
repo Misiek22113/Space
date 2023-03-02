@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Card from "../../Card/Card";
 import {
   SUN,
@@ -46,15 +47,26 @@ const SolarSystem = () => {
           planetImgPath={"venus.png"}
           onRight={true}
         ></Card>
-        <Card
-          planet={"EARTH"}
-          overview={EARTH.overview}
-          distance={EARTH.distance}
-          moons={EARTH.moons}
-          years={EARTH.years}
-          planetImgPath={"Earth_small.png"}
-          onRight={false}
-        ></Card>
+        <div className="earth-section">
+          <div>
+            <Link to="/moon">
+              <img
+                src="../../../../public/planets/moon.png"
+                className="moon-img"
+              ></img>
+            </Link>
+          </div>
+          <Card
+            planet={"EARTH"}
+            overview={EARTH.overview}
+            distance={EARTH.distance}
+            moons={EARTH.moons}
+            years={EARTH.years}
+            planetImgPath={"Earth_small.png"}
+            onRight={false}
+          ></Card>
+        </div>
+
         <Card
           planet={"MARS"}
           overview={MARS.overview}
