@@ -1,14 +1,7 @@
 @import "../../../styles/constants.scss";
 
 .solar-system-background {
-  background: url("../../../../public/planets/gwiazdy_2.jpg");
-  position: fixed;
-  background-size: auto;
-  background-repeat: repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  z-index: -1;
+  @include page-background-image("../../../../public/planets/gwiazdy_2.jpg");
 }
 
 .planet-section {

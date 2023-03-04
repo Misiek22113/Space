@@ -21,10 +21,10 @@ const SolarSystem = () => {
       <div className="planet-section">
         <motion.div
           className="sun-card"
-          initial={{ x: 30, opacity: 0 }}
+          initial={{ x: 40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Card
             planet={SUN.planet}
@@ -37,10 +37,10 @@ const SolarSystem = () => {
           ></Card>
         </motion.div>
         <motion.div
-          initial={{ x: -30, opacity: 0 }}
+          initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Card
             planet={"MERUCRY"}
@@ -53,10 +53,10 @@ const SolarSystem = () => {
           ></Card>
         </motion.div>
         <motion.div
-          initial={{ x: 30, opacity: 0 }}
+          initial={{ x: 40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Card
             planet={VENUS.planet}
@@ -70,10 +70,10 @@ const SolarSystem = () => {
         </motion.div>
         <motion.div
           className="earth-section"
-          initial={{ x: -30, opacity: 0 }}
+          initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <div>
             <Link to="/moon">
@@ -94,10 +94,10 @@ const SolarSystem = () => {
           ></Card>
         </motion.div>
         <motion.div
-          initial={{ x: 30, opacity: 0 }}
+          initial={{ x: 40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Card
             planet={"MARS"}
@@ -110,10 +110,10 @@ const SolarSystem = () => {
           ></Card>
         </motion.div>
         <motion.div
-          initial={{ x: -30, opacity: 0 }}
+          initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Card
             planet={"JUPITER"}
@@ -126,10 +126,10 @@ const SolarSystem = () => {
           ></Card>
         </motion.div>
         <motion.div
-          initial={{ x: 30, opacity: 0 }}
+          initial={{ x: 40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Card
             planet={"SATURN"}
@@ -142,10 +142,10 @@ const SolarSystem = () => {
           ></Card>
         </motion.div>
         <motion.div
-          initial={{ x: -30, opacity: 0 }}
+          initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Card
             planet={"URANUS"}
@@ -158,10 +158,10 @@ const SolarSystem = () => {
           ></Card>
         </motion.div>
         <motion.div
-          initial={{ x: 30, opacity: 0 }}
+          initial={{ x: 40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Card
             planet={"NEPTUNE"}

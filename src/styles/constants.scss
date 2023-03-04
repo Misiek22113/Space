@@ -3,6 +3,8 @@ $neutral-color-90: hsl(0, 0%, 90%);
 $neutral-color-85: hsl(0, 0%, 85%);
 $neutral-color-80: hsl(0, 0%, 80%);
 $neutral-color-75: hsl(0, 0%, 75%);
+$neutral-color-25: hsla(0, 0%, 25%);
+$neutral-color-15: hsla(0, 0%, 15%, 0.5);
 
 $navbar-background-color: hsl(0, 0%, 05%, 0.5);
 
@@ -21,4 +23,22 @@ $mobile-screen-size: 65em;
   height: 100vh;
   width: 100%;
   z-index: -1;
+}
+
+:root {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: $neutral-color-15;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $neutral-color-25; /* color of the thumb */
+  border-radius: 3px;
+  height: 9rem;
 }

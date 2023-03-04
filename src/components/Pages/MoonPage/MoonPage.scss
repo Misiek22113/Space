@@ -1,10 +1,19 @@
 @import "../../../styles/constants.scss";
 
 .background-moon {
-  @include page-background-image(
-    "../../../assets/MoonPageImages/moon_page_background.jpg"
-  );
-  background-repeat: repeat;
+  @include page-background-image("../../../assets/MoonPageImages/cosmos.jpg");
+
+  .go-back-container {
+    display: flex;
+    position: absolute;
+    color: $neutral-color-95;
+    top: 7rem;
+    left: 2.5rem;
+
+    .arrow-img {
+      width: 3rem;
+    }
+  }
 
   .card-section {
     padding-top: 10rem;

@@ -7,6 +7,11 @@ import { motion } from "framer-motion";
 const MoonPage = () => {
   return (
     <div className="background-moon">
+      <div className="go-back-container">
+        <Link to="/SolarSystem">
+          <img src="../../../../public/arrow.svg" className="arrow-img"></img>
+        </Link>
+      </div>
       <motion.div
         className="card-section"
         initial={{ y: 30, opacity: 0 }}
@@ -23,7 +28,6 @@ const MoonPage = () => {
           onRight={true}
         />
       </motion.div>
-
       {/* <h1>MoonPage</h1> */}
     </div>
   );
