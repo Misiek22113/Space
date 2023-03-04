@@ -36,6 +36,7 @@ const SolarSystem = () => {
             onRight={true}
           ></Card>
         </motion.div>
+        <div className="rocket"></div>
         <motion.div
           initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

@@ -6,11 +6,13 @@ import SolarSystem from "./components/Pages/SolarSystem/SolarSystem";
 import "../styles/global.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/Pages/RootLayout/RootLayout";
+import ErrorPage from "./components/Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
