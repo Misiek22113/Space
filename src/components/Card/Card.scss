@@ -197,13 +197,17 @@
             #planet-icon {
               width: 2rem;
               align-self: flex-end;
-              padding-bottom: 0.7rem;
+              padding-bottom: 1.2rem;
             }
 
             .measure-text {
               font-size: 2.2vh;
               color: $neutral-color-95;
             }
+          }
+
+          .description-text {
+            font-size: clamp(1.5rem, 1rem + 3vw, 3rem);
           }
         }
       }
