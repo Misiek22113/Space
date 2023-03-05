@@ -1,0 +1,68 @@
+@import "../../../styles/constants.scss";
+
+.history-page-background {
+  @include page-background-image("../../../assets/HistoryPage/galaxy_dark.jpg");
+}
+
+.history-wrapper {
+  .parallax-cotent {
+    margin-top: 0;
+    padding-top: 10vh;
+  }
+
+  .take-off-text {
+    font-size: clamp(7rem, 1rem + 15vw, 40rem);
+    color: $neutral-color-95;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30vh;
+  }
+
+  .take-off-counter-text {
+    font-size: clamp(9rem, 1rem + 25vw, 40rem);
+    color: $neutral-color-95;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30vh;
+  }
+
+  .start-container {
+    text-align: center;
+    .start-image {
+      height: 140vh;
+      text-align: center;
+    }
+  }
+
+  .spacecraft-image {
+    height: 80vh;
+    text-align: center;
+    transform: rotate(180deg);
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+
+  .date-text {
+    color: $neutral-color-95;
+    text-align: center;
+    font-size: clamp(7rem, 1rem + 15vw, 40rem);
+    margin-left: 35%;
+    margin-bottom: 0;
+  }
+
+  .mission-text {
+    color: $neutral-color-95;
+    text-align: center;
+    font-size: clamp(5rem, 1rem + 7vw, 40rem);
+    margin: 0 0 1rem 35%;
+  }
+
+  .mission-content {
+    color: $neutral-color-95;
+    text-align: right;
+    padding-left: 39rem;
+    font-size: clamp(4rem, 1rem + 4vw, 40rem);
+    text-align: center;
+    margin: 0;
+  }
+}

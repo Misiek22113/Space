@@ -50,7 +50,7 @@ const Navbar = () => {
         </li>
         <li className="list-element">
           <NavLink
-            to="/"
+            to="/HistoryPage"
             className={({ isActive }) =>
               isActive ? "nav-text-underlined" : "nav-text"
             }

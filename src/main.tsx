@@ -7,6 +7,7 @@ import "../styles/global.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/Pages/RootLayout/RootLayout";
 import ErrorPage from "./components/Pages/ErrorPage/ErrorPage";
+import HistoryPage from "./components/Pages/HistoryPage/HistoryPage";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,8 @@ const router = createBrowserRouter([
         element: <MoonPage />,
       },
       {
-        path: "/SolarSystem",
-        element: <SolarSystem />,
+        path: "/HistoryPage",
+        element: <HistoryPage />,
       },
     ],
   },
