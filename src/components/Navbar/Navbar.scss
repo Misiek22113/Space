@@ -2,7 +2,7 @@
 
 @mixin navbar-button-image($url-path: "") {
   background: url($url-path);
-  z-index: 9999;
+  z-index: 1000;
   background-repeat: no-repeat;
   width: 48px;
   border: 0;
@@ -17,6 +17,7 @@
   width: 100%;
   justify-content: space-between;
   position: fixed;
+  z-index: 9999;
 
   #compass-icon {
     width: 4rem;
@@ -83,6 +84,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 9999;
 
     button {
       display: block;

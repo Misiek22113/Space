@@ -1,7 +1,17 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./HistoryPage.scss";
 import SPACECRAFT from "../../../assets/HistoryPage/spacecraft.svg";
-import SPACECRAFT_START from "../../../assets/HistoryPage/rocket_start.svg";
+import APOLLO_SVG from "../../../assets/HistoryPage/apollo.svg";
+import {
+  SPUTNIK,
+  SPUTNIK_2,
+  EXPLORER,
+  VOSTOK_1,
+  REACH_THE_MOON,
+  FIRST_SPACEWALK,
+  GEMMINI,
+  APOLLO,
+} from "./HistoryData";
 
 const HistoryPage = () => {
   return (
@@ -9,71 +19,112 @@ const HistoryPage = () => {
       <div className="history-wrapper">
         <div className="history-page-background"></div>
         <div className="parallax-content">
-          <Parallax pages={10}>
+          <Parallax pages={14}>
             <ParallaxLayer
               offset={0}
               speed={1}
               style={{ justifyContent: "center" }}
             >
-              <h1 className="take-off-text">TAKE-OFF</h1>
+              <h1 className="take-off-text">TAKE OFF</h1>
             </ParallaxLayer>
             <ParallaxLayer
-              offset={1}
-              speed={1.5}
-              style={{ justifyContent: "center" }}
-            >
-              <h1 className="take-off-counter-text">3</h1>
-            </ParallaxLayer>
-            <ParallaxLayer
-              offset={2}
-              speed={1.5}
-              style={{ justifyContent: "center" }}
-            >
-              <h1 className="take-off-counter-text">2</h1>
-            </ParallaxLayer>
-            <ParallaxLayer
-              offset={3}
-              speed={1.5}
-              style={{ justifyContent: "center" }}
-            >
-              <h1 className="take-off-counter-text">1</h1>
-            </ParallaxLayer>
-            <ParallaxLayer
-              offset={4}
-              speed={0.5}
-              style={{ justifyContent: "center" }}
-              className="start-container"
-            >
-              <img src={SPACECRAFT_START} className="start-image"></img>
-            </ParallaxLayer>
-            <ParallaxLayer
-              sticky={{ start: 5, end: 10 }}
+              sticky={{ start: 0.9, end: 13 }}
               style={{ justifyContent: "flex-start" }}
             >
               <img src={SPACECRAFT} className="spacecraft-image"></img>
             </ParallaxLayer>
             <ParallaxLayer
-              offset={6}
+              offset={1}
               speed={0.5}
               style={{ justifyContent: "flex-end" }}
             >
-              <h1
-                className="date-text"
-                // style={{ display: "block", width: "10%", marginLeft: "70%" }}
-              >
-                1961
-              </h1>
+              <h1 className="date-text">{SPUTNIK.date}</h1>
               <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">WOSTOK I</h2>
+              <h2 className="mission-text">{SPUTNIK.mission}</h2>
+              <h3 className="mission-content">{SPUTNIK.content}</h3>
+            </ParallaxLayer>
+            {/*  */}
+            <ParallaxLayer
+              offset={2.8}
+              speed={0.5}
+              style={{ justifyContent: "flex-end" }}
+            >
+              <h1 className="date-text">{SPUTNIK_2.date}</h1>
+              <h2 className="mission-text">MISSION:</h2>
+              <h2 className="mission-text">{SPUTNIK_2.mission}</h2>
+              <h3 className="mission-content">{SPUTNIK_2.content}</h3>
+            </ParallaxLayer>
+            {/*  */}
+            <ParallaxLayer
+              offset={4.1}
+              speed={0.5}
+              style={{ justifyContent: "flex-end" }}
+            >
+              <h1 className="date-text">{EXPLORER.date}</h1>
+              <h2 className="mission-text">MISSION:</h2>
+              <h2 className="mission-text">{EXPLORER.mission}</h2>
+              <h3 className="mission-content">{EXPLORER.content}</h3>
+            </ParallaxLayer>
+            {/*  */}
+            <ParallaxLayer
+              offset={5.9}
+              speed={0.5}
+              style={{ justifyContent: "flex-end" }}
+            >
+              <h1 className="date-text">{VOSTOK_1.date}</h1>
+              <h2 className="mission-text">MISSION:</h2>
+              <h2 className="mission-text">{VOSTOK_1.mission}</h2>
+              <h3 className="mission-content">{VOSTOK_1.content}</h3>
+            </ParallaxLayer>
+            {/*  */}
+            <ParallaxLayer
+              offset={7.18}
+              speed={0.5}
+              style={{ justifyContent: "flex-end" }}
+            >
+              <h1 className="date-text">{REACH_THE_MOON.date}</h1>
+              <h2 className="mission-text">MISSION:</h2>
+              <h2 className="mission-text">{REACH_THE_MOON.mission}</h2>
+              <h3 className="mission-content">{REACH_THE_MOON.content}</h3>
+            </ParallaxLayer>
+            {/*  */}
+            <ParallaxLayer
+              offset={9}
+              speed={0.5}
+              style={{ justifyContent: "flex-end" }}
+            >
+              <h1 className="date-text">{FIRST_SPACEWALK.date}</h1>
+              <h2 className="mission-text">MISSION:</h2>
+              <h2 className="mission-text">{FIRST_SPACEWALK.mission}</h2>
+              <h3 className="mission-content">{FIRST_SPACEWALK.content}</h3>
+            </ParallaxLayer>
+            {/*  */}
+            <ParallaxLayer
+              offset={10.8}
+              speed={0.5}
+              style={{ justifyContent: "flex-end" }}
+            >
+              <h1 className="date-text">{GEMMINI.date}</h1>
+              <h2 className="mission-text">MISSION:</h2>
+              <h2 className="mission-text">{GEMMINI.mission}</h2>
+              <h3 className="mission-content">{GEMMINI.content}</h3>
             </ParallaxLayer>
             <ParallaxLayer
-              offset={7}
+              offset={12.1}
               speed={0.5}
               style={{ justifyContent: "flex-end" }}
             >
-              <h3 className="mission-content">
-                Jurij Gagarin was the first person who have been into space
-              </h3>
+              <h1 className="date-text">{APOLLO.date}</h1>
+              <h2 className="mission-text">MISSION:</h2>
+              <h2 className="mission-text">{APOLLO.mission}</h2>
+              <h3 className="mission-content">{APOLLO.content}</h3>
+            </ParallaxLayer>
+            <ParallaxLayer
+              offset={13}
+              speed={0.5}
+              style={{ justifyContent: "center" }}
+            >
+              <img src={APOLLO_SVG} className="spacecraft-image"></img>
             </ParallaxLayer>
           </Parallax>
         </div>

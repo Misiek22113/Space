@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         path: "/HistoryPage",
         element: <HistoryPage />,
       },
+      {
+        path: "/SolarSystem",
+        element: <SolarSystem />,
+      },
     ],
   },
 ]);
