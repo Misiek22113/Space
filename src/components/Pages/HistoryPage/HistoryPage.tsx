@@ -19,7 +19,7 @@ const HistoryPage = () => {
       <div className="history-wrapper">
         <div className="history-page-background"></div>
         <div className="parallax-content">
-          <Parallax pages={14}>
+          <Parallax pages={14.5}>
             <ParallaxLayer
               offset={0}
               speed={1}
@@ -28,7 +28,7 @@ const HistoryPage = () => {
               <h1 className="take-off-text">TAKE OFF</h1>
             </ParallaxLayer>
             <ParallaxLayer
-              sticky={{ start: 0.9, end: 13 }}
+              sticky={{ start: 0.9, end: 12.4 }}
               style={{ justifyContent: "flex-start" }}
             >
               <img src={SPACECRAFT} className="spacecraft-image"></img>
@@ -120,11 +120,11 @@ const HistoryPage = () => {
               <h3 className="mission-content">{APOLLO.content}</h3>
             </ParallaxLayer>
             <ParallaxLayer
-              offset={13}
+              offset={13.5}
               speed={0.5}
               style={{ justifyContent: "center" }}
             >
-              <img src={APOLLO_SVG} className="spacecraft-image"></img>
+              <img src={APOLLO_SVG} className="apollo-image"></img>
             </ParallaxLayer>
           </Parallax>
         </div>
