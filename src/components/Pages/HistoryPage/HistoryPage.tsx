@@ -1,7 +1,8 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./HistoryPage.scss";
-import SPACECRAFT from "../../../assets/HistoryPage/spacecraft.svg";
+import SPACECRAFT from "../../../assets/HistoryPage/spacecraft_fire.svg";
 import APOLLO_SVG from "../../../assets/HistoryPage/apollo.svg";
+import HALF_MOON from "../../../assets/HistoryPage/half_moon.png";
 import {
   SPUTNIK,
   SPUTNIK_2,
@@ -31,7 +32,9 @@ const HistoryPage = () => {
               sticky={{ start: 0.9, end: 12.4 }}
               style={{ justifyContent: "flex-start" }}
             >
-              <img src={SPACECRAFT} className="spacecraft-image"></img>
+              <div className="spacecraft-container">
+                <img src={SPACECRAFT} className="spacecraft-image"></img>
+              </div>
             </ParallaxLayer>
             <ParallaxLayer
               offset={1}
@@ -120,11 +123,14 @@ const HistoryPage = () => {
               <h3 className="mission-content">{APOLLO.content}</h3>
             </ParallaxLayer>
             <ParallaxLayer
-              offset={13.5}
+              offset={13.9}
               speed={0.5}
               style={{ justifyContent: "center" }}
             >
-              <img src={APOLLO_SVG} className="apollo-image"></img>
+              <div className="apollo-container">
+                <img src={HALF_MOON} className="half-moon-image"></img>
+                <img src={APOLLO_SVG} className="apollo-image"></img>
+              </div>
             </ParallaxLayer>
           </Parallax>
         </div>
