@@ -24,14 +24,14 @@ const router = createBrowserRouter([
         element: <MoonPage />,
       },
       {
-        path: "/HistoryPage",
-        element: <HistoryPage />,
-      },
-      {
         path: "/SolarSystem",
         element: <SolarSystem />,
       },
     ],
+  },
+  {
+    path: "/HistoryPage",
+    element: <HistoryPage />,
   },
 ]);
 

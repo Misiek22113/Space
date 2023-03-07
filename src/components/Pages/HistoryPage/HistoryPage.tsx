@@ -14,6 +14,7 @@ import {
   APOLLO,
 } from "./HistoryData";
 import { useRef } from "react";
+import Navbar from "../../Navbar/Navbar";
 
 const HistoryPage = () => {
   const parallax = useRef<IParallax>(null);
@@ -29,11 +30,10 @@ const HistoryPage = () => {
       <div className="history-wrapper">
         <div className="history-page-background"></div>
         <div className="parallax-content">
-          <Parallax
-            pages={14.5}
-            ref={parallax}
-            style={{ scrollbarColor: "red" }}
-          >
+          <Parallax pages={14.5} ref={parallax}>
+            <ParallaxLayer sticky={{ start: 0, end: 15 }}>
+              <Navbar />
+            </ParallaxLayer>
             <ParallaxLayer
               offset={0}
               speed={1}
