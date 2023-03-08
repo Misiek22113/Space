@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 import Card from "../../Card/Card";
 import {
   SUN,
@@ -77,7 +77,7 @@ const SolarSystem = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <div>
-            <Link to="/moon">
+            <Link to="/moon" preventScrollReset={true}>
               <img
                 src="../../../../public/planets/moon.png"
                 className="moon-img"
