@@ -31,10 +31,7 @@ const HistoryPage = () => {
         <div className="history-page-background"></div>
         <div className="parallax-content">
           <Parallax pages={14.5} ref={parallax}>
-            <ParallaxLayer
-              sticky={{ start: 0, end: 15 }}
-              style={{ height: "6rem" }}
-            >
+            <ParallaxLayer sticky={{ start: 0, end: 15 }}>
               <Navbar />
             </ParallaxLayer>
             <ParallaxLayer
