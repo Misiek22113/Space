@@ -36,7 +36,6 @@ const SolarSystem = () => {
             onRight={true}
           ></Card>
         </motion.div>
-        <div className="rocket"></div>
         <motion.div
           initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -44,12 +43,12 @@ const SolarSystem = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <Card
-            planet={"MERUCRY"}
+            planet={MERCURY.planet}
             overview={MERCURY.overview}
             distance={MERCURY.distance}
             moons={MERCURY.moons}
             years={MERCURY.years}
-            planetImgPath={"Mercury.png"}
+            planetImgPath={MERCURY.planetImgPath}
             onRight={false}
           ></Card>
         </motion.div>
@@ -65,7 +64,7 @@ const SolarSystem = () => {
             distance={VENUS.distance}
             moons={VENUS.moons}
             years={VENUS.years}
-            planetImgPath={"venus.png"}
+            planetImgPath={VENUS.planetImgPath}
             onRight={true}
           ></Card>
         </motion.div>
@@ -85,12 +84,12 @@ const SolarSystem = () => {
             </Link>
           </div>
           <Card
-            planet={"EARTH"}
+            planet={EARTH.planet}
             overview={EARTH.overview}
             distance={EARTH.distance}
             moons={EARTH.moons}
             years={EARTH.years}
-            planetImgPath={"Earth_small.png"}
+            planetImgPath={EARTH.planetImgPath}
             onRight={false}
           ></Card>
         </motion.div>
@@ -101,12 +100,12 @@ const SolarSystem = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <Card
-            planet={"MARS"}
+            planet={MARS.planet}
             overview={MARS.overview}
             distance={MARS.distance}
             moons={MARS.moons}
             years={MARS.years}
-            planetImgPath={"Mars_small.png"}
+            planetImgPath={MARS.planetImgPath}
             onRight={true}
           ></Card>
         </motion.div>
@@ -117,12 +116,12 @@ const SolarSystem = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <Card
-            planet={"JUPITER"}
+            planet={JUPITER.planet}
             overview={JUPITER.overview}
             distance={JUPITER.distance}
             moons={JUPITER.moons}
             years={JUPITER.years}
-            planetImgPath={"Jupiter_small.png"}
+            planetImgPath={JUPITER.planetImgPath}
             onRight={false}
           ></Card>
         </motion.div>
@@ -133,12 +132,12 @@ const SolarSystem = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <Card
-            planet={"SATURN"}
+            planet={SATURN.planet}
             overview={SATURN.overview}
             distance={SATURN.distance}
             moons={SATURN.moons}
             years={SATURN.years}
-            planetImgPath={"Saturn_without_ring.png"}
+            planetImgPath={SATURN.planetImgPath}
             onRight={true}
           ></Card>
         </motion.div>
@@ -149,12 +148,12 @@ const SolarSystem = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <Card
-            planet={"URANUS"}
+            planet={URANUS.planet}
             overview={URANUS.overview}
             distance={URANUS.distance}
             moons={URANUS.moons}
             years={URANUS.years}
-            planetImgPath={"Uran_small.png"}
+            planetImgPath={URANUS.planetImgPath}
             onRight={false}
           ></Card>
         </motion.div>
@@ -165,12 +164,12 @@ const SolarSystem = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <Card
-            planet={"NEPTUNE"}
+            planet={NEPTUNE.planet}
             overview={NEPTUNE.overview}
             distance={NEPTUNE.distance}
             moons={NEPTUNE.moons}
             years={NEPTUNE.years}
-            planetImgPath={"Neptun_small.png"}
+            planetImgPath={NEPTUNE.planetImgPath}
             onRight={true}
           ></Card>
         </motion.div>

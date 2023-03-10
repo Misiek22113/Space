@@ -5,7 +5,7 @@ const SUN = {
   distance: 150,
   moons: 330000,
   years: 4.5,
-  planetImgPath: "sun_smaller_size.png",
+  planetImgPath: "Sun.png",
 };
 
 const VENUS = {
@@ -15,7 +15,7 @@ const VENUS = {
   distance: 0.7,
   moons: 0,
   years: 225,
-  planetImgPath: "venus.png",
+  planetImgPath: "Venus.png",
 };
 
 const MERCURY = {
@@ -35,7 +35,7 @@ const EARTH = {
   distance: 1,
   moons: 1,
   years: 1,
-  planetImgPath: "Earth_small.png",
+  planetImgPath: "Earth.png",
 };
 
 const MARS = {
@@ -45,7 +45,7 @@ const MARS = {
   distance: 1.5,
   moons: 2,
   years: 1.88,
-  planetImgPath: "Mars_small.png",
+  planetImgPath: "Mars.png",
 };
 
 const JUPITER = {
@@ -55,7 +55,7 @@ const JUPITER = {
   distance: 5.2,
   moons: 79,
   years: 11.86,
-  planetImgPath: "Jupiter_small.png",
+  planetImgPath: "Jupiter.png",
 };
 
 const SATURN = {
@@ -75,7 +75,7 @@ const URANUS = {
   distance: 19.8,
   moons: 27,
   years: 84,
-  planetImgPath: "Saturn_without_ring.png",
+  planetImgPath: "Uran.png",
 };
 
 const NEPTUNE = {
@@ -85,7 +85,7 @@ const NEPTUNE = {
   distance: 30.1,
   moons: 14,
   years: 164.81,
-  planetImgPath: "Saturn_without_ring.png",
+  planetImgPath: "Neptun.png",
 };
 
 export { SUN, VENUS, MERCURY, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE };

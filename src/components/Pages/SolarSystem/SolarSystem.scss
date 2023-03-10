@@ -1,7 +1,9 @@
 @import "../../../styles/constants.scss";
 
 .solar-system-background {
-  @include page-background-image("../../../../public/planets/gwiazdy_2.jpg");
+  @include page-background-image(
+    "../../../assets/SolarSystemPageImages/gwiazdy_2.jpg"
+  );
 }
 
 .planet-section {

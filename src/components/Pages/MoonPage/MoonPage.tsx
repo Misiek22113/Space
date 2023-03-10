@@ -28,7 +28,6 @@ const MoonPage = () => {
           onRight={true}
         />
       </motion.div>
-      {/* <h1>MoonPage</h1> */}
     </div>
   );
 };
