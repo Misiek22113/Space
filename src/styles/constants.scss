@@ -37,16 +37,23 @@ $mobile-screen-size: 65em;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: $neutral-color-15;
+  background-color: $neutral-color-10;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $neutral-color-25; /* color of the thumb */
+  background-color: $neutral-color-25;
   border-radius: 3px;
   height: 9rem;
 }
 
-// ::-webkit-scrollbar {
-//   width: 0px;
-//   background: transparent; /* make scrollbar transparent */
-// }
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../assets/HomePageImages/Home_Page_1920_dark.jpg")
+    url("../assets/HistoryPage/galaxy_dark_2.jpg")
+    url("../assets/MoonPageImages/cosmos.jpg")
+    url("../assets/SolarSystemPageImages/stars.jpg");
+}

@@ -58,7 +58,7 @@
   .date-text {
     color: $neutral-color-95;
     text-align: center;
-    font-size: clamp(5rem, 1rem + 10vw, 40rem);
+    font-size: clamp(5rem, 1rem + 8vw, 40rem);
     margin-left: 35%;
     margin-bottom: 0;
   }
@@ -66,14 +66,14 @@
   .mission-text {
     color: $neutral-color-95;
     text-align: center;
-    font-size: clamp(3rem, 1rem + 5vw, 40rem);
+    font-size: clamp(3rem, 1rem + 3.5vw, 40rem);
     margin: 0 0 1rem 35%;
   }
 
   .mission-content {
     color: $neutral-color-95;
     text-align: right;
-    font-size: clamp(2.5rem, 1rem + 1vw, 40rem);
+    font-size: clamp(2.2rem, 1rem + 1.2vw, 40rem);
     text-align: center;
     margin-left: 35%;
     padding: 2rem 3rem;

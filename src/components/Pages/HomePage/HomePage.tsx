@@ -22,6 +22,7 @@ const HomePage = () => {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "circOut", duration: 0.6, delay: 0.3 }}
+          id="button-container"
         >
           <Link to="/SolarSystem">
             <motion.button
