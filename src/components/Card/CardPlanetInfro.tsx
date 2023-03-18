@@ -6,4 +6,5 @@ export default interface CardPlanetInfo {
   years: number;
   planetImgPath: string;
   onRight: boolean;
+  showInfo: boolean;
 }

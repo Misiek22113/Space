@@ -32,6 +32,7 @@ const HistoryPage = () => {
         <div className="parallax-content">
           <Parallax pages={14.5} ref={parallax}>
             <ParallaxLayer sticky={{ start: 0, end: 15 }}>
+              {/* TO DO NAVBAR CONTAINER ŻEBY NIE PRZYSŁANIAŁ PORUSZANIA SIĘ NA KLIK */}
               <Navbar />
             </ParallaxLayer>
             <ParallaxLayer

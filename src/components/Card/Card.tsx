@@ -10,7 +10,36 @@ const Card = ({
   years,
   planetImgPath,
   onRight,
+  showInfo,
 }: CardPlanetInfo) => {
+  const displayPlanetFigures = () => {
+    return (
+      <div className="planet-figures">
+        <div className="single-planet-figure">
+          <div className="measure">
+            <h3>{years}</h3>
+            <h3 className="measure-text">Earth Years</h3>
+          </div>
+          <h3 className="description-text">Length Of Year</h3>
+        </div>
+        <div className="single-planet-figure">
+          <div className="measure">
+            <h3>{distance}</h3>
+            <h3 className="measure-text">AU</h3>
+          </div>
+          <h3 className="description-text">Distance from sun</h3>
+        </div>
+        <div className="single-planet-figure">
+          <div className="measure">
+            <h3>{moons}</h3>
+            <img src={PLANET} id="planet-icon"></img>
+          </div>
+          <h3 className="description-text">Moons</h3>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div
       className={
@@ -27,29 +56,11 @@ const Card = ({
         <div className="planet-overview">
           <p>{overview}</p>
         </div>
-        <div className="planet-figures">
-          <div className="single-planet-figure">
-            <div className="measure">
-              <h3>{years}</h3>
-              <h3 className="measure-text">Earth Years</h3>
-            </div>
-            <h3 className="description-text">Length Of Year</h3>
-          </div>
-          <div className="single-planet-figure">
-            <div className="measure">
-              <h3>{distance}</h3>
-              <h3 className="measure-text">AU</h3>
-            </div>
-            <h3 className="description-text">Distance from sun</h3>
-          </div>
-          <div className="single-planet-figure">
-            <div className="measure">
-              <h3>{moons}</h3>
-              <img src={PLANET} id="planet-icon"></img>
-            </div>
-            <h3 className="description-text">Moons</h3>
-          </div>
-        </div>
+        {showInfo == true ? (
+          displayPlanetFigures()
+        ) : (
+          <div id="space-between-text" />
+        )}
       </div>
     </div>
   );

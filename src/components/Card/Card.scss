@@ -32,6 +32,10 @@
     display: flex;
     flex-direction: column;
 
+    #space-between-text {
+      margin-bottom: 10rem;
+    }
+
     .planet-overview {
       display: flex;
       justify-content: center;

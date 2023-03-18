@@ -1,7 +1,9 @@
 @import "../../../styles/constants.scss";
 
 .history-page-background {
-  @include page-background-image("../../../assets/HistoryPage/galaxy_dark.jpg");
+  @include page-background-image(
+    "../../../assets/HistoryPage/galaxy_dark_2.jpg"
+  );
 }
 
 .history-wrapper {

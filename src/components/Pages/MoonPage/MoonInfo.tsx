@@ -6,6 +6,7 @@ const MOON = {
   weight: 0,
   age: 4.5,
   planetImgPath: "moon.png",
+  showInfo: false,
 };
 
 export default MOON;

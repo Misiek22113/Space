@@ -13,6 +13,7 @@ import {
 } from "./PlanetsInfo";
 import "./SolarSystem.scss";
 import { motion } from "framer-motion";
+import MOON_IMG from "../../../../public/planets/moon.png";
 
 const SolarSystem = () => {
   return (
@@ -34,6 +35,7 @@ const SolarSystem = () => {
             years={SUN.years}
             planetImgPath={SUN.planetImgPath}
             onRight={true}
+            showInfo={SUN.showInfo}
           ></Card>
         </motion.div>
         <motion.div
@@ -50,6 +52,7 @@ const SolarSystem = () => {
             years={MERCURY.years}
             planetImgPath={MERCURY.planetImgPath}
             onRight={false}
+            showInfo={MERCURY.showInfo}
           ></Card>
         </motion.div>
         <motion.div
@@ -66,6 +69,7 @@ const SolarSystem = () => {
             years={VENUS.years}
             planetImgPath={VENUS.planetImgPath}
             onRight={true}
+            showInfo={VENUS.showInfo}
           ></Card>
         </motion.div>
         <motion.div
@@ -77,10 +81,7 @@ const SolarSystem = () => {
         >
           <div>
             <Link to="/moon" preventScrollReset={true}>
-              <img
-                src="../../../../public/planets/moon.png"
-                className="moon-img"
-              ></img>
+              <img src={MOON_IMG} className="moon-img"></img>
             </Link>
           </div>
           <Card
@@ -91,6 +92,7 @@ const SolarSystem = () => {
             years={EARTH.years}
             planetImgPath={EARTH.planetImgPath}
             onRight={false}
+            showInfo={EARTH.showInfo}
           ></Card>
         </motion.div>
         <motion.div
@@ -107,6 +109,7 @@ const SolarSystem = () => {
             years={MARS.years}
             planetImgPath={MARS.planetImgPath}
             onRight={true}
+            showInfo={MARS.showInfo}
           ></Card>
         </motion.div>
         <motion.div
@@ -123,6 +126,7 @@ const SolarSystem = () => {
             years={JUPITER.years}
             planetImgPath={JUPITER.planetImgPath}
             onRight={false}
+            showInfo={JUPITER.showInfo}
           ></Card>
         </motion.div>
         <motion.div
@@ -139,6 +143,7 @@ const SolarSystem = () => {
             years={SATURN.years}
             planetImgPath={SATURN.planetImgPath}
             onRight={true}
+            showInfo={SATURN.showInfo}
           ></Card>
         </motion.div>
         <motion.div
@@ -155,6 +160,7 @@ const SolarSystem = () => {
             years={URANUS.years}
             planetImgPath={URANUS.planetImgPath}
             onRight={false}
+            showInfo={URANUS.showInfo}
           ></Card>
         </motion.div>
         <motion.div
@@ -171,6 +177,7 @@ const SolarSystem = () => {
             years={NEPTUNE.years}
             planetImgPath={NEPTUNE.planetImgPath}
             onRight={true}
+            showInfo={NEPTUNE.showInfo}
           ></Card>
         </motion.div>
       </div>
