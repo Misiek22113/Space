@@ -1,8 +1,6 @@
 @import "../../../styles/constants.scss";
 
 .background-moon {
-  // @include page-background-image("../../../assets/MoonPageImages/cosmos.jpg");
-
   .background {
     top: 0;
     left: 0;
@@ -31,6 +29,10 @@
 
 @media (max-width: $mobile-screen-size) {
   .background-moon {
+    .background {
+      width: fit-content;
+    }
+
     .card-section {
       padding-top: 4rem;
     }
