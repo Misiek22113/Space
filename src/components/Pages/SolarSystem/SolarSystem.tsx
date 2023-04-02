@@ -14,11 +14,12 @@ import {
 import "./SolarSystem.scss";
 import { motion } from "framer-motion";
 import MOON_IMG from "../../../../public/planets/moon.png";
+import Stars from "../../../../public/backgrounds/stars.jpg";
 
 const SolarSystem = () => {
   return (
     <>
-      <div className="solar-system-background"></div>
+      <img src={Stars} className="solar-system-background"></img>
       <div className="planet-section">
         <motion.div
           className="sun-card"

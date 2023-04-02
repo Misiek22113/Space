@@ -1,9 +1,15 @@
 @import "../../../styles/constants.scss";
 
 .solar-system-background {
-  @include page-background-image(
-    "../../../assets/SolarSystemPageImages/stars.jpg"
-  );
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+  // @include page-background-image(
+  //   "../../../assets/SolarSystemPageImages/stars.jpg"
+  // );
 }
 
 .planet-section {

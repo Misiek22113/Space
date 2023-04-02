@@ -1,7 +1,16 @@
 @import "../../../styles/constants.scss";
 
 .background-moon {
-  @include page-background-image("../../../assets/MoonPageImages/cosmos.jpg");
+  // @include page-background-image("../../../assets/MoonPageImages/cosmos.jpg");
+
+  .background {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+  }
 
   .go-back-container {
     display: flex;

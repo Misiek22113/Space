@@ -1,9 +1,15 @@
 @import "../../../styles/constants.scss";
 
 .history-page-background {
-  @include page-background-image(
-    "../../../assets/HistoryPage/galaxy_dark_2.jpg"
-  );
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+  // @include page-background-image(
+  //   "../../../assets/HistoryPage/galaxy_dark_2.jpg"
+  // );
 }
 
 .history-wrapper {

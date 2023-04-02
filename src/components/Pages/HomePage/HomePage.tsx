@@ -3,11 +3,12 @@ import "./HomePage.scss";
 import Button from "../../../styles/button.module.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Background from "../../../../public/backgrounds/Home_Page_1920_dark.jpg";
 
 const HomePage = () => {
   return (
     <>
-      <div className="background"></div>
+      <img src={Background} className="background"></img>
       <div className="home-page-content">
         <div className="home-info-section">
           <motion.div
