@@ -8,7 +8,7 @@ const HomeInfo = () => {
       <p className="bottom-text">
         If so you are on perfect website. Here you can learn basics of our solar
         system. How it looks like, what planets are included and how big and far
-        from Earth they are. If you are read to start, let`s explore!
+        from Earth they are. If you are ready to start, let`s explore!
       </p>
     </div>
   );

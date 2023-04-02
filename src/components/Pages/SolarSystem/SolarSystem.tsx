@@ -36,6 +36,7 @@ const SolarSystem = () => {
             planetImgPath={SUN.planetImgPath}
             onRight={true}
             showInfo={SUN.showInfo}
+            lengthDays={false}
           ></Card>
         </motion.div>
         <motion.div
@@ -53,6 +54,7 @@ const SolarSystem = () => {
             planetImgPath={MERCURY.planetImgPath}
             onRight={false}
             showInfo={MERCURY.showInfo}
+            lengthDays={true}
           ></Card>
         </motion.div>
         <motion.div
@@ -70,6 +72,7 @@ const SolarSystem = () => {
             planetImgPath={VENUS.planetImgPath}
             onRight={true}
             showInfo={VENUS.showInfo}
+            lengthDays={true}
           ></Card>
         </motion.div>
         <motion.div
@@ -93,6 +96,7 @@ const SolarSystem = () => {
             planetImgPath={EARTH.planetImgPath}
             onRight={false}
             showInfo={EARTH.showInfo}
+            lengthDays={false}
           ></Card>
         </motion.div>
         <motion.div
@@ -110,6 +114,7 @@ const SolarSystem = () => {
             planetImgPath={MARS.planetImgPath}
             onRight={true}
             showInfo={MARS.showInfo}
+            lengthDays={false}
           ></Card>
         </motion.div>
         <motion.div
@@ -127,6 +132,7 @@ const SolarSystem = () => {
             planetImgPath={JUPITER.planetImgPath}
             onRight={false}
             showInfo={JUPITER.showInfo}
+            lengthDays={false}
           ></Card>
         </motion.div>
         <motion.div
@@ -144,6 +150,7 @@ const SolarSystem = () => {
             planetImgPath={SATURN.planetImgPath}
             onRight={true}
             showInfo={SATURN.showInfo}
+            lengthDays={false}
           ></Card>
         </motion.div>
         <motion.div
@@ -161,6 +168,7 @@ const SolarSystem = () => {
             planetImgPath={URANUS.planetImgPath}
             onRight={false}
             showInfo={URANUS.showInfo}
+            lengthDays={false}
           ></Card>
         </motion.div>
         <motion.div
@@ -178,6 +186,7 @@ const SolarSystem = () => {
             planetImgPath={NEPTUNE.planetImgPath}
             onRight={true}
             showInfo={NEPTUNE.showInfo}
+            lengthDays={false}
           ></Card>
         </motion.div>
       </div>

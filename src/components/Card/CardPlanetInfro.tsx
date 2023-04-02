@@ -7,4 +7,5 @@ export default interface CardPlanetInfo {
   planetImgPath: string;
   onRight: boolean;
   showInfo: boolean;
+  lengthDays: boolean;
 }

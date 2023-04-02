@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   gap: 10rem;
+  overflow-x: hidden;
 
   .earth-section {
     .moon-img {
@@ -41,7 +42,6 @@
         position: relative;
         left: 3rem;
         top: 8rem;
-        z-index: -1;
         cursor: pointer;
       }
     }

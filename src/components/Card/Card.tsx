@@ -11,6 +11,7 @@ const Card = ({
   planetImgPath,
   onRight,
   showInfo,
+  lengthDays,
 }: CardPlanetInfo) => {
   const displayPlanetFigures = () => {
     return (
@@ -18,7 +19,9 @@ const Card = ({
         <div className="single-planet-figure">
           <div className="measure">
             <h3>{years}</h3>
-            <h3 className="measure-text">Earth Years</h3>
+            <h3 className="measure-text">
+              Earth {lengthDays == true ? "Days" : "Years"}
+            </h3>
           </div>
           <h3 className="description-text">Length Of Year</h3>
         </div>
@@ -27,7 +30,7 @@ const Card = ({
             <h3>{distance}</h3>
             <h3 className="measure-text">AU</h3>
           </div>
-          <h3 className="description-text">Distance from sun</h3>
+          <h3 className="description-text">Distance From Sun</h3>
         </div>
         <div className="single-planet-figure">
           <div className="measure">

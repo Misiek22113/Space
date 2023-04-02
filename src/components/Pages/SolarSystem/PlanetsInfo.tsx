@@ -34,7 +34,7 @@ const MERCURY = {
 const EARTH = {
   planet: "EARTH",
   overview:
-    "Earth is our home planet. It is the only place we know of so far that's inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.",
+    "Earth is our home planet. It is the only place we know of so far that's inhabited by living things. It's also the only planet in our solar system with liquid water on the surface. (click on the Moon)",
   distance: 1,
   moons: 1,
   years: 1,
