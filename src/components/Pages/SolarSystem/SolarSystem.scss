@@ -7,9 +7,6 @@
   height: 100vh;
   z-index: -1;
   position: fixed;
-  // @include page-background-image(
-  //   "../../../assets/SolarSystemPageImages/stars.jpg"
-  // );
 }
 
 .planet-section {
@@ -35,6 +32,10 @@
 }
 
 @media (max-width: $mobile-screen-size) {
+  .solar-system-background {
+    width: fit-content;
+  }
+
   .planet-section {
     gap: 3rem;
 
