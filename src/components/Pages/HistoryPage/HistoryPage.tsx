@@ -3,6 +3,7 @@ import "./HistoryPage.scss";
 import SPACECRAFT from "../../../assets/HistoryPage/spacecraft_fire.svg";
 import APOLLO_SVG from "../../../assets/HistoryPage/apollo.svg";
 import HALF_MOON from "../../../assets/HistoryPage/half_moon.png";
+import Galaxy from "../../../../public/backgrounds/galaxy_dark_2.jpg";
 import {
   SPUTNIK,
   SPUTNIK_2,
@@ -28,7 +29,7 @@ const HistoryPage = () => {
   return (
     <>
       <div className="history-wrapper">
-        <div className="history-page-background"></div>
+        <img src={Galaxy} className="history-page-background"></img>
         <div className="parallax-content">
           <Parallax pages={14.5} ref={parallax}>
             <ParallaxLayer sticky={{ start: 0, end: 15 }}>

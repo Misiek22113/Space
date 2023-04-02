@@ -1,15 +1,21 @@
 @import "../../../styles/constants.scss";
 
 .background {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // gap: 2rem;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
 
-  @include page-background-image(
-    "../../../assets/HomePageImages/Home_Page_1920_dark.jpg"
-  );
+  // @include page-background-image(
+  //   "../../../assets/HomePageImages/Home_Page_1920_dark.jpg"
+  // );
 }
 
 .home-page-content {
