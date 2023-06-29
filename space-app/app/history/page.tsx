@@ -35,7 +35,7 @@ const HistoryPage = () => {
           src={BACKGROUND}
           className="background"
           fill
-          quality={100}
+          placeholder="blur"
           priority
         />
         <div className="parallax-content">

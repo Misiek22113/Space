@@ -54,7 +54,7 @@ const Card = ({
         <h1>{planet}</h1>
       </div>
       <div className="planet-img-container">
-        <Image alt="planet img" className="planet-img" src={planetImg}></Image>
+        <Image alt="planet img" id="planet-img" src={planetImg}></Image>
       </div>
       <div className="information-container">
         <div className="planet-overview">
