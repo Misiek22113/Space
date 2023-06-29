@@ -41,7 +41,7 @@ const SolarSystem = () => {
             distance={SUN.distance}
             moons={SUN.moons}
             years={SUN.years}
-            planetImgPath={SUN.planetImgPath}
+            planetImg={SUN.planetImg}
             onRight={true}
             showInfo={SUN.showInfo}
             lengthDays={false}
@@ -59,7 +59,7 @@ const SolarSystem = () => {
             distance={MERCURY.distance}
             moons={MERCURY.moons}
             years={MERCURY.years}
-            planetImgPath={MERCURY.planetImgPath}
+            planetImg={MERCURY.planetImg}
             onRight={false}
             showInfo={MERCURY.showInfo}
             lengthDays={true}
@@ -77,7 +77,7 @@ const SolarSystem = () => {
             distance={VENUS.distance}
             moons={VENUS.moons}
             years={VENUS.years}
-            planetImgPath={VENUS.planetImgPath}
+            planetImg={VENUS.planetImg}
             onRight={true}
             showInfo={VENUS.showInfo}
             lengthDays={true}
@@ -107,7 +107,7 @@ const SolarSystem = () => {
             distance={EARTH.distance}
             moons={EARTH.moons}
             years={EARTH.years}
-            planetImgPath={EARTH.planetImgPath}
+            planetImg={EARTH.planetImg}
             onRight={false}
             showInfo={EARTH.showInfo}
             lengthDays={false}
@@ -125,7 +125,7 @@ const SolarSystem = () => {
             distance={MARS.distance}
             moons={MARS.moons}
             years={MARS.years}
-            planetImgPath={MARS.planetImgPath}
+            planetImg={MARS.planetImg}
             onRight={true}
             showInfo={MARS.showInfo}
             lengthDays={false}
@@ -143,7 +143,7 @@ const SolarSystem = () => {
             distance={JUPITER.distance}
             moons={JUPITER.moons}
             years={JUPITER.years}
-            planetImgPath={JUPITER.planetImgPath}
+            planetImg={JUPITER.planetImg}
             onRight={false}
             showInfo={JUPITER.showInfo}
             lengthDays={false}
@@ -161,7 +161,7 @@ const SolarSystem = () => {
             distance={SATURN.distance}
             moons={SATURN.moons}
             years={SATURN.years}
-            planetImgPath={SATURN.planetImgPath}
+            planetImg={SATURN.planetImg}
             onRight={true}
             showInfo={SATURN.showInfo}
             lengthDays={false}
@@ -179,7 +179,7 @@ const SolarSystem = () => {
             distance={URANUS.distance}
             moons={URANUS.moons}
             years={URANUS.years}
-            planetImgPath={URANUS.planetImgPath}
+            planetImg={URANUS.planetImg}
             onRight={false}
             showInfo={URANUS.showInfo}
             lengthDays={false}
@@ -197,7 +197,7 @@ const SolarSystem = () => {
             distance={NEPTUNE.distance}
             moons={NEPTUNE.moons}
             years={NEPTUNE.years}
-            planetImgPath={NEPTUNE.planetImgPath}
+            planetImg={NEPTUNE.planetImg}
             onRight={true}
             showInfo={NEPTUNE.showInfo}
             lengthDays={false}

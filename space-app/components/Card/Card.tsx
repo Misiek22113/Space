@@ -1,5 +1,5 @@
 import "./Card.scss";
-import CardPlanetInfo from "./CardPlanetInfro";
+import CardPlanetInfo from "../../utils/CardPlanetInfo";
 import PLANET from "../../../public/planet.svg";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ const Card = ({
   distance,
   moons,
   years,
-  planetImgPath,
+  planetImg,
   onRight,
   showInfo,
   lengthDays,
@@ -54,13 +54,7 @@ const Card = ({
         <h1>{planet}</h1>
       </div>
       <div className="planet-img-container">
-        <Image
-          alt="planet img"
-          className="planet-img"
-          width={500}
-          height={500}
-          src={`/solar-system-page/planets/${planetImgPath}`}
-        ></Image>
+        <Image alt="planet img" className="planet-img" src={planetImg}></Image>
       </div>
       <div className="information-container">
         <div className="planet-overview">

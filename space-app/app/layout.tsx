@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "@/components/Navbar/Navbar";
-import "./globals.scss";
+import "../styles/globals.scss";
 import { Inria_Serif } from "next/font/google";
 
 const inria = Inria_Serif({

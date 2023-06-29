@@ -1,3 +1,13 @@
+import SUN_IMG from "../../public/solar-system-page/planets/Sun.png";
+import VENUS_IMG from "../../public/solar-system-page/planets/Venus.png";
+import MERCURY_IMG from "../../public/solar-system-page/planets/Mercury.png";
+import EARTH_IMG from "../../public/solar-system-page/planets/Earth.png";
+import MARS_IMG from "../../public/solar-system-page/planets/Mars.png";
+import JUPITER_IMG from "../../public/solar-system-page/planets/Jupiter.png";
+import SATURN_IMG from "../../public/solar-system-page/planets/Saturn.png";
+import URANUS_IMG from "../../public/solar-system-page/planets/Uranus.png";
+import NEPTUNE_IMG from "../../public/solar-system-page/planets/Neptune.png";
+
 const SUN = {
   planet: "THE SUN",
   overview:
@@ -5,7 +15,7 @@ const SUN = {
   distance: 150,
   moons: 330000,
   years: 4.5,
-  planetImgPath: "Sun.png",
+  planetImg: SUN_IMG,
   showInfo: false,
 };
 
@@ -16,7 +26,7 @@ const VENUS = {
   distance: 0.7,
   moons: 0,
   years: 225,
-  planetImgPath: "Venus.png",
+  planetImg: VENUS_IMG,
   showInfo: true,
 };
 
@@ -27,7 +37,7 @@ const MERCURY = {
   distance: 0.4,
   moons: 0,
   years: 88,
-  planetImgPath: "Mercury.png",
+  planetImg: MERCURY_IMG,
   showInfo: true,
 };
 
@@ -38,7 +48,7 @@ const EARTH = {
   distance: 1,
   moons: 1,
   years: 1,
-  planetImgPath: "Earth.png",
+  planetImg: EARTH_IMG,
   showInfo: true,
 };
 
@@ -49,7 +59,7 @@ const MARS = {
   distance: 1.5,
   moons: 2,
   years: 1.88,
-  planetImgPath: "Mars.png",
+  planetImg: MARS_IMG,
   showInfo: true,
 };
 
@@ -60,7 +70,7 @@ const JUPITER = {
   distance: 5.2,
   moons: 79,
   years: 11.86,
-  planetImgPath: "Jupiter.png",
+  planetImg: JUPITER_IMG,
   showInfo: true,
 };
 
@@ -71,7 +81,7 @@ const SATURN = {
   distance: 9.5,
   moons: 62,
   years: 29.45,
-  planetImgPath: "Saturn_without_ring.png",
+  planetImg: SATURN_IMG,
   showInfo: true,
 };
 
@@ -82,7 +92,7 @@ const URANUS = {
   distance: 19.8,
   moons: 27,
   years: 84,
-  planetImgPath: "Uran.png",
+  planetImg: URANUS_IMG,
   showInfo: true,
 };
 
@@ -93,7 +103,7 @@ const NEPTUNE = {
   distance: 30.1,
   moons: 14,
   years: 164.81,
-  planetImgPath: "Neptun.png",
+  planetImg: NEPTUNE_IMG,
   showInfo: true,
 };
 
