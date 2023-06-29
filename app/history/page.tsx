@@ -1,5 +1,5 @@
 "use client";
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import { Parallax, ParallaxLayer } from "@react-spring";
 import "./HistoryPage.scss";
 import SPACECRAFT from "../../public/history-page/spacecraft_fire.svg";
 import APOLLO_SVG from "../../public/history-page/apollo.svg";
