@@ -1,0 +1,49 @@
+@import "../../app/globals.scss";
+
+$space-text-font-weight: 500;
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $neutral-color-95;
+  width: 60vw;
+
+  .top-text {
+    font-size: clamp(2rem, 1rem + 2vw, 3.8rem);
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .space-text {
+    font-weight: $space-text-font-weight;
+    font-size: clamp(3.2rem, 1rem + 4vw, 5.5rem);
+    margin: 1.3rem;
+  }
+
+  .bottom-text {
+    display: flex;
+    font-size: clamp(1.8rem, 0.1rem + 2vw, 3.2rem);
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: $mobile-screen-size) {
+  .info-container {
+    width: 82vw;
+
+    .top-text {
+      font-size: clamp(1.8rem, 1rem + 1.8vh, 2.6rem);
+    }
+
+    .space-text {
+      font-size: clamp(2.5rem, 1rem + 6vh, 4rem);
+    }
+
+    .bottom-text {
+      font-size: clamp(1.3rem, 0.9rem + 1.3vh, 1.8rem);
+    }
+  }
+}
