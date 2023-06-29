@@ -5,6 +5,7 @@ import SPACECRAFT from "../../public/history-page/spacecraft_fire.svg";
 import APOLLO_SVG from "../../public/history-page/apollo.svg";
 import HALF_MOON from "../../public/history-page/half_moon.png";
 import BACKGROUND from "../../public/history-page/galaxy_dark_2.jpg";
+import MissionCard from "@/components/MissionCard/MissionCard";
 import {
   SPUTNIK,
   SPUTNIK_2,
@@ -12,9 +13,9 @@ import {
   VOSTOK_1,
   REACH_THE_MOON,
   FIRST_SPACEWALK,
-  GEMMINI,
+  GEMINI,
   APOLLO,
-} from "./HistoryData";
+} from "../../utils/HistoryData";
 import { useRef } from "react";
 import Image from "next/image";
 
@@ -43,7 +44,7 @@ const HistoryPage = () => {
             <ParallaxLayer
               offset={0}
               speed={1}
-              style={{ justifyContent: "center" }}
+              style={{ justifyContent: "center", cursor: "pointer" }}
               onClick={() => scroll(1)}
             >
               <h1 className="take-off-text">TAKE OFF</h1>
@@ -60,104 +61,67 @@ const HistoryPage = () => {
                 ></Image>
               </div>
             </ParallaxLayer>
-            <ParallaxLayer
-              offset={1}
+            <MissionCard
               speed={0.5}
-              style={{ justifyContent: "flex-end" }}
-              onClick={() => scroll(2.6)}
-            >
-              <h1 className="date-text">{SPUTNIK.date}</h1>
-              <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">{SPUTNIK.mission}</h2>
-              <h3 className="mission-content">{SPUTNIK.content}</h3>
-            </ParallaxLayer>
-            {/*  */}
-            <ParallaxLayer
+              offset={1}
+              scroll={scroll}
+              scrollValue={2.5}
+              missionInfo={SPUTNIK}
+            />
+            <MissionCard
               offset={2.8}
               speed={0.5}
-              style={{ justifyContent: "flex-end" }}
-              onClick={() => scroll(4.1)}
-            >
-              <h1 className="date-text">{SPUTNIK_2.date}</h1>
-              <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">{SPUTNIK_2.mission}</h2>
-              <h3 className="mission-content">{SPUTNIK_2.content}</h3>
-            </ParallaxLayer>
-            {/*  */}
-            <ParallaxLayer
+              scroll={scroll}
+              scrollValue={4.1}
+              missionInfo={SPUTNIK_2}
+            />
+            <MissionCard
               offset={4.1}
               speed={0.5}
-              style={{ justifyContent: "flex-end" }}
-              onClick={() => scroll(5.7)}
-            >
-              <h1 className="date-text">{EXPLORER.date}</h1>
-              <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">{EXPLORER.mission}</h2>
-              <h3 className="mission-content">{EXPLORER.content}</h3>
-            </ParallaxLayer>
-            {/*  */}
-            <ParallaxLayer
+              scroll={scroll}
+              scrollValue={5.6}
+              missionInfo={EXPLORER}
+            />
+            <MissionCard
               offset={5.9}
               speed={0.5}
-              style={{ justifyContent: "flex-end" }}
-              onClick={() => scroll(7.18)}
-            >
-              <h1 className="date-text">{VOSTOK_1.date}</h1>
-              <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">{VOSTOK_1.mission}</h2>
-              <h3 className="mission-content">{VOSTOK_1.content}</h3>
-            </ParallaxLayer>
-            {/*  */}
-            <ParallaxLayer
+              scroll={scroll}
+              scrollValue={7.1}
+              missionInfo={VOSTOK_1}
+            />
+            <MissionCard
               offset={7.18}
               speed={0.5}
-              style={{ justifyContent: "flex-end" }}
-              onClick={() => scroll(9.1)}
-            >
-              <h1 className="date-text">{REACH_THE_MOON.date}</h1>
-              <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">{REACH_THE_MOON.mission}</h2>
-              <h3 className="mission-content">{REACH_THE_MOON.content}</h3>
-            </ParallaxLayer>
-            {/*  */}
-            <ParallaxLayer
+              scroll={scroll}
+              scrollValue={9}
+              missionInfo={REACH_THE_MOON}
+            />
+            <MissionCard
               offset={9}
               speed={0.5}
-              style={{ justifyContent: "flex-end" }}
-              onClick={() => scroll(10.6)}
-            >
-              <h1 className="date-text">{FIRST_SPACEWALK.date}</h1>
-              <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">{FIRST_SPACEWALK.mission}</h2>
-              <h3 className="mission-content">{FIRST_SPACEWALK.content}</h3>
-            </ParallaxLayer>
-            {/*  */}
-            <ParallaxLayer
+              scroll={scroll}
+              scrollValue={10.55}
+              missionInfo={FIRST_SPACEWALK}
+            />
+            <MissionCard
               offset={10.8}
               speed={0.5}
-              style={{ justifyContent: "flex-end" }}
-              onClick={() => scroll(12.1)}
-            >
-              <h1 className="date-text">{GEMMINI.date}</h1>
-              <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">{GEMMINI.mission}</h2>
-              <h3 className="mission-content">{GEMMINI.content}</h3>
-            </ParallaxLayer>
-            <ParallaxLayer
+              scroll={scroll}
+              scrollValue={12.1}
+              missionInfo={GEMINI}
+            />
+            <MissionCard
               offset={12.1}
               speed={0.5}
-              style={{ justifyContent: "flex-end" }}
-              onClick={() => scroll(13.9)}
-            >
-              <h1 className="date-text">{APOLLO.date}</h1>
-              <h2 className="mission-text">MISSION:</h2>
-              <h2 className="mission-text">{APOLLO.mission}</h2>
-              <h3 className="mission-content">{APOLLO.content}</h3>
-            </ParallaxLayer>
+              scroll={scroll}
+              scrollValue={13.9}
+              missionInfo={APOLLO}
+            />
             <ParallaxLayer
               offset={13.9}
               speed={0.5}
-              style={{ justifyContent: "center" }}
+              style={{ justifyContent: "center", cursor: "pointer" }}
+              onClick={() => scroll(0)}
             >
               <div className="apollo-container">
                 <Image

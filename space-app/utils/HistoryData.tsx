@@ -40,7 +40,7 @@ const FIRST_SPACEWALK = {
     "The U.S.S.R. also achieved the first spacewalk and launched the Vostok 6 mission, which made Valentina Tereshkova the first woman to travel to space.",
 };
 
-const GEMMINI = {
+const GEMINI = {
   date: "1960s",
   mission: "GEMINI",
   content:
@@ -61,6 +61,6 @@ export {
   VOSTOK_1,
   REACH_THE_MOON,
   FIRST_SPACEWALK,
-  GEMMINI,
+  GEMINI,
   APOLLO,
 };
