@@ -16,7 +16,6 @@ import {
   APOLLO,
 } from "./HistoryData";
 import { useRef } from "react";
-import Navbar from "@/components/Navbar/Navbar";
 import Image from "next/image";
 
 const HistoryPage = () => {
