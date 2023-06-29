@@ -9,7 +9,7 @@
   aspect-ratio: 1;
   margin-top: 1.25rem;
   margin-right: 2rem;
-  transition: $tranistion-time;
+  transition: $transition-time;
 }
 
 .nav-container {
@@ -50,20 +50,20 @@
   .list-element > * {
     color: $neutral-color-95;
     text-decoration: none;
-    transition: $tranistion-time;
+    transition: $transition-time;
   }
 
   .list-element:hover {
     text-decoration-line: underline;
     text-decoration-line: $neutral-color-95;
-    transition: $tranistion-time;
+    transition: $transition-time;
   }
 
   .nav-text {
     list-style-type: circle;
     color: $neutral-color-95;
     cursor: pointer;
-    transition: $tranistion-time;
+    transition: $transition-time;
   }
 
   .nav-text-underlined {
@@ -71,7 +71,7 @@
     color: $neutral-color-95;
     cursor: pointer;
     text-decoration-line: underline;
-    transition: $tranistion-time;
+    transition: $transition-time;
   }
 
   button {
@@ -105,12 +105,12 @@
       top: 0;
       margin: 0;
       transform: translateX(100%);
-      transition: $tranistion-time;
+      transition: $transition-time;
     }
 
     .primary-navigation[data-is-active="false"] {
       transform: translateX(0%);
-      transition: $tranistion-time;
+      transition: $transition-time;
     }
 
     .list-element {
@@ -119,11 +119,11 @@
     }
 
     .toggle-button-burger {
-      @include navbar-button-image("burger.svg");
+      @include navbar-button-image("../../public/navbar/burger.svg");
     }
 
     .toggle-button-close {
-      @include navbar-button-image("close.svg");
+      @include navbar-button-image("../../public/navbar/close.svg");
     }
   }
 }

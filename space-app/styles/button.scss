@@ -1,6 +1,6 @@
 @import "./globals.scss";
 
-$tranistion-on-click: 0.1s;
+$transition-on-click: 0.1s;
 
 .circle-button {
   border: 1px solid $neutral-color-90;
@@ -11,19 +11,19 @@ $tranistion-on-click: 0.1s;
   font-size: 2rem;
   font-family: inherit;
   cursor: pointer;
-  transition: $tranistion-time;
+  transition: $transition-time;
   color: $neutral-color-10;
 
   &:hover {
     border-color: $neutral-color-75;
     background-color: $neutral-color-75;
-    transition: $tranistion-time;
+    transition: $transition-time;
   }
 
   &:active {
     background-color: $neutral-color-95;
     border-color: $neutral-color-95;
-    transition: $tranistion-on-click;
+    transition: $transition-on-click;
   }
 }
 
