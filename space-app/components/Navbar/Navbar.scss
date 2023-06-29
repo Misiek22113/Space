@@ -1,0 +1,129 @@
+@import "/app/globals.scss";
+
+@mixin navbar-button-image($url-path: "") {
+  background: url($url-path);
+  z-index: 1000;
+  background-repeat: no-repeat;
+  width: 48px;
+  border: 0;
+  aspect-ratio: 1;
+  margin-top: 1.25rem;
+  margin-right: 2rem;
+  transition: $tranistion-time;
+}
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9999;
+
+  #compass-icon {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    padding-left: 2rem;
+  }
+
+  #compass-icon-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .primary-navigation {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 5rem;
+    color: $neutral-color-95;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-top: 1.2rem;
+    height: 4rem;
+    background-color: $navbar-background-color;
+    backdrop-filter: blur(0.1rem);
+    font-size: 1.3rem;
+  }
+
+  .list-element > * {
+    color: $neutral-color-95;
+    text-decoration: none;
+    transition: $tranistion-time;
+  }
+
+  .list-element:hover {
+    text-decoration-line: underline;
+    text-decoration-line: $neutral-color-95;
+    transition: $tranistion-time;
+  }
+
+  .nav-text {
+    list-style-type: circle;
+    color: $neutral-color-95;
+    cursor: pointer;
+    transition: $tranistion-time;
+  }
+
+  .nav-text-underlined {
+    list-style-type: circle;
+    color: $neutral-color-95;
+    cursor: pointer;
+    text-decoration-line: underline;
+    transition: $tranistion-time;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-screen-size) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+
+    button {
+      display: block;
+    }
+
+    #compass-icon {
+      margin-top: 1.25rem;
+    }
+
+    .primary-navigation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      height: 100%;
+      width: 30%;
+      right: 0;
+      top: 0;
+      margin: 0;
+      transform: translateX(100%);
+      transition: $tranistion-time;
+    }
+
+    .primary-navigation[data-is-active="false"] {
+      transform: translateX(0%);
+      transition: $tranistion-time;
+    }
+
+    .list-element {
+      text-align: left;
+      align-self: flex-start;
+    }
+
+    .toggle-button-burger {
+      @include navbar-button-image("burger.svg");
+    }
+
+    .toggle-button-close {
+      @include navbar-button-image("close.svg");
+    }
+  }
+}
