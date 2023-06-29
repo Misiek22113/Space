@@ -1,6 +1,6 @@
 "use client";
 import "./Navbar.scss";
-import COMPASS from "./compass_filled.svg";
+import COMPASS from "../../public/navbar/compass_filled.svg";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
