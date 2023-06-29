@@ -1,3 +1,5 @@
+import MOON_IMAGE from "../public/moon-page/moon.png";
+
 const MOON = {
   planet: "MOON",
   overview:
@@ -5,7 +7,7 @@ const MOON = {
   distance: 0,
   weight: 0,
   age: 4.5,
-  planetImgPath: "moon.png",
+  planetImgPath: MOON_IMAGE,
   showInfo: false,
 };
 

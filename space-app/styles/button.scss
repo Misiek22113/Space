@@ -1,0 +1,36 @@
+@import "./globals.scss";
+
+$tranistion-on-click: 0.1s;
+
+.circle-button {
+  border: 1px solid $neutral-color-90;
+  border-radius: 50%;
+  background-color: $neutral-color-90;
+  width: 25vh;
+  aspect-ratio: 1;
+  font-size: 2rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: $tranistion-time;
+  color: $neutral-color-10;
+
+  &:hover {
+    border-color: $neutral-color-75;
+    background-color: $neutral-color-75;
+    transition: $tranistion-time;
+  }
+
+  &:active {
+    background-color: $neutral-color-95;
+    border-color: $neutral-color-95;
+    transition: $tranistion-on-click;
+  }
+}
+
+@media (max-width: $mobile-screen-size) {
+  .circle-button {
+    width: 20vh;
+    aspect-ratio: 1;
+    font-size: 1.6rem;
+  }
+}

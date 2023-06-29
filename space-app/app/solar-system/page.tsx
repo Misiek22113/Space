@@ -13,7 +13,7 @@ import {
 } from "./PlanetsInfo";
 import "./SolarSystem.scss";
 import { motion } from "framer-motion";
-import MOON_IMG from "../../public/solar-system-page/planets/moon.png";
+import MOON_IMG from "../../public/moon-page/moon.png";
 import Stars from "../../public/solar-system-page/stars.jpg";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,6 +25,7 @@ const SolarSystem = () => {
         alt="background"
         src={Stars}
         className="solar-system-background"
+        placeholder="blur"
         priority
       ></Image>
       <div className="planet-section">
@@ -92,13 +93,7 @@ const SolarSystem = () => {
         >
           <div>
             <Link href="/moon">
-              <Image
-                alt="moon"
-                src={MOON_IMG}
-                className="moon-img"
-                width={100}
-                height={100}
-              ></Image>
+              <Image alt="moon" src={MOON_IMG} className="moon-img"></Image>
             </Link>
           </div>
           <Card

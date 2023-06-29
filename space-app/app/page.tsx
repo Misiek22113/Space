@@ -1,7 +1,7 @@
 "use client";
 import HomeInfo from "@/components/HomeInfo/HomeInfo";
 import "./HomePage.scss";
-import Button from "../styles/Button.module.scss";
+import "../styles/Button.scss";
 import { motion } from "framer-motion";
 import Background from "../public/home-page/Home_Page_1920_dark.jpg";
 import Image from "next/image";
@@ -14,8 +14,8 @@ const HomePage = () => {
         alt="homepage background"
         src={Background}
         className="background"
+        placeholder="blur"
         fill
-        quality={100}
         priority
       />
       <div className="home-page-content">
@@ -34,9 +34,9 @@ const HomePage = () => {
           transition={{ ease: "circOut", duration: 0.6, delay: 0.3 }}
           id="button-container"
         >
-          <Link href="/history">
+          <Link href="/solar-system">
             <motion.button
-              className={`${Button.circle}`}
+              className="circle-button"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

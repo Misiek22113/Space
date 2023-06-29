@@ -1,18 +1,26 @@
+"use client";
 import Card from "@/components/Card/Card";
 import "./MoonPage.scss";
-import MOON from "./MoonInfo";
-import { Link } from "react-router-dom";
+import MOON from "../../utils/MoonInfo";
 import { motion } from "framer-motion";
-import BACK_ARROW from "../../../../public/arrow.svg";
-import Stars from "../../../../public/backgrounds/cosmos.jpg";
+import BACK_ARROW from "../../public/moon-page/arrow.svg";
+import STARS from "../../public/moon-page/cosmos.jpg";
+import Image from "next/image";
+import Link from "next/link";
 
 const MoonPage = () => {
   return (
     <div className="background-moon">
-      <img src={Stars} className="background" />
+      <Image
+        alt="background"
+        src={STARS}
+        className="background-img"
+        priority
+        placeholder="blur"
+      />
       <div className="go-back-container">
-        <Link to="/SolarSystem">
-          <img src={BACK_ARROW} className="arrow-img"></img>
+        <Link href="/solar-system">
+          <Image alt="moon img" src={BACK_ARROW} className="arrow-img"></Image>
         </Link>
       </div>
       <motion.div
@@ -27,7 +35,7 @@ const MoonPage = () => {
           distance={MOON.distance}
           moons={MOON.weight}
           years={MOON.age}
-          planetImgPath={MOON.planetImgPath}
+          planetImg={MOON.planetImgPath}
           onRight={true}
           showInfo={false}
           lengthDays={false}
