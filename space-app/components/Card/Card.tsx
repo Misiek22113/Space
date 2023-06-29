@@ -1,5 +1,5 @@
 import "./Card.scss";
-import CardPlanetInfo from "../../utils/CardPlanetInfo";
+import { CardPlanetInfo } from "../../utils/Intefaces";
 import PLANET from "../../../public/planet.svg";
 import Image from "next/image";
 

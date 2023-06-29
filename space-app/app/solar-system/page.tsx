@@ -10,7 +10,7 @@ import {
   SATURN,
   URANUS,
   NEPTUNE,
-} from "./PlanetsInfo";
+} from "../../utils/PlanetsInfo";
 import "./SolarSystem.scss";
 import { motion } from "framer-motion";
 import MOON_IMG from "../../public/moon-page/moon.png";

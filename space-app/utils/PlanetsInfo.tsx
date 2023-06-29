@@ -1,12 +1,12 @@
-import SUN_IMG from "../../public/solar-system-page/planets/Sun.png";
-import VENUS_IMG from "../../public/solar-system-page/planets/Venus.png";
-import MERCURY_IMG from "../../public/solar-system-page/planets/Mercury.png";
-import EARTH_IMG from "../../public/solar-system-page/planets/Earth.png";
-import MARS_IMG from "../../public/solar-system-page/planets/Mars.png";
-import JUPITER_IMG from "../../public/solar-system-page/planets/Jupiter.png";
-import SATURN_IMG from "../../public/solar-system-page/planets/Saturn.png";
-import URANUS_IMG from "../../public/solar-system-page/planets/Uranus.png";
-import NEPTUNE_IMG from "../../public/solar-system-page/planets/Neptune.png";
+import SUN_IMG from "../public/solar-system-page/planets/Sun.png";
+import VENUS_IMG from "../public/solar-system-page/planets/Venus.png";
+import MERCURY_IMG from "../public/solar-system-page/planets/Mercury.png";
+import EARTH_IMG from "../public/solar-system-page/planets/Earth.png";
+import MARS_IMG from "../public/solar-system-page/planets/Mars.png";
+import JUPITER_IMG from "../public/solar-system-page/planets/Jupiter.png";
+import SATURN_IMG from "../public/solar-system-page/planets/Saturn.png";
+import URANUS_IMG from "../public/solar-system-page/planets/Uranus.png";
+import NEPTUNE_IMG from "../public/solar-system-page/planets/Neptune.png";
 
 const SUN = {
   planet: "THE SUN",
