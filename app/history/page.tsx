@@ -1,5 +1,4 @@
 "use client";
-import { Parallax, ParallaxLayer } from "@react-spring";
 import "./HistoryPage.scss";
 import SPACECRAFT from "../../public/history-page/spacecraft_fire.svg";
 import APOLLO_SVG from "../../public/history-page/apollo.svg";
@@ -18,6 +17,7 @@ import {
 } from "../../utils/HistoryData";
 import { useRef } from "react";
 import Image from "next/image";
+import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const HistoryPage = () => {
   const parallax = useRef<IParallax>(null);
