@@ -40,7 +40,7 @@ const HistoryPage = () => {
           priority
         />
         <div className="parallax-content">
-          <Parallax pages={14.5} ref={parallax}>
+          <Parallax pages={13.2} ref={parallax}>
             <ParallaxLayer
               offset={0}
               speed={1}
@@ -50,7 +50,7 @@ const HistoryPage = () => {
               <h1 className="take-off-text">TAKE OFF</h1>
             </ParallaxLayer>
             <ParallaxLayer
-              sticky={{ start: 0.9, end: 12.4 }}
+              sticky={{ start: 0.9, end: 12 }}
               style={{ justifyContent: "flex-start", width: "30%" }}
             >
               <div className="spacecraft-container">
