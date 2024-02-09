@@ -114,16 +114,16 @@ const HistoryPage = () => {
               offset={12.1}
               speed={0.5}
               scroll={scroll}
-              scrollValue={13.9}
+              scrollValue={0}
               missionInfo={APOLLO}
             />
-            <ParallaxLayer
+            {/* <ParallaxLayer
               offset={13.9}
               speed={0.5}
               style={{ justifyContent: "center", cursor: "pointer" }}
               onClick={() => scroll(0)}
             >
-              {/* <div className="apollo-container">
+              <div className="apollo-container">
                 <Image
                   alt="HALF_MOON"
                   src={HALF_MOON}
@@ -134,8 +134,8 @@ const HistoryPage = () => {
                   src={APOLLO_SVG}
                   className="apollo-image"
                 ></Image>
-              </div> */}
-            </ParallaxLayer>
+              </div>
+            </ParallaxLayer> */}
           </Parallax>
         </div>
       </div>
