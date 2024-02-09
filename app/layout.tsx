@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "../styles/globals.scss";
 import { Inria_Serif } from "next/font/google";
+import { Suspense } from "react";
 
 const inria = Inria_Serif({
   subsets: ["latin"],
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inria.className}>
-        <Navbar />
+        <Suspense>
+          <Navbar />
+        </Suspense>
         {children}
       </body>
     </html>
