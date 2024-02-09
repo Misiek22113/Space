@@ -1,7 +1,7 @@
 "use client";
 import HomeInfo from "@/components/HomeInfo/HomeInfo";
 import "./HomePage.scss";
-import "../styles/Button.scss";
+import "../styles/button.scss";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Background from "../public/home-page/Home_Page_1920_dark.jpg";
