@@ -10,15 +10,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  overflow-y: hidden;
-
-  #button-container {
-    height: 30vh;
-  }
+  height: 90vh;
+  // overflow-y: hidden;
 
   .home-info-section {
-    margin-top: 11vh;
+    padding-top: 5vh; // Zmniejsz tę wartość
+  }
+
+  #button-container {
+    height: 20vh; // Zmniejsz tę wartość
   }
 }
 
