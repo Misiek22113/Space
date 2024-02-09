@@ -123,7 +123,7 @@ const HistoryPage = () => {
               style={{ justifyContent: "center", cursor: "pointer" }}
               onClick={() => scroll(0)}
             >
-              <div className="apollo-container">
+              {/* <div className="apollo-container">
                 <Image
                   alt="HALF_MOON"
                   src={HALF_MOON}
@@ -134,7 +134,7 @@ const HistoryPage = () => {
                   src={APOLLO_SVG}
                   className="apollo-image"
                 ></Image>
-              </div>
+              </div> */}
             </ParallaxLayer>
           </Parallax>
         </div>

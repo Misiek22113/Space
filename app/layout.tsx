@@ -1,8 +1,6 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "../styles/globals.scss";
 import { Inria_Serif } from "next/font/google";
-import Background from "../public/home-page/Home_Page_1920_dark.jpg";
-import Image from "next/image";
 
 const inria = Inria_Serif({
   subsets: ["latin"],
@@ -22,16 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inria.className}>
-        <Image
-          alt="homepage background"
-          src={Background}
-          className="background"
-          placeholder="blur"
-          fill
-          priority
-          sizes="100vw"
-          style={{ objectFit: "cover" }}
-        />
         <Navbar />
         {children}
       </body>

@@ -25,7 +25,7 @@
     position: relative;
 
     #planet-img {
-      width: clamp(26rem, 32vw, 40rem);
+      width: clamp(20rem, 24vw, 32rem);
       height: auto;
     }
   }
@@ -73,7 +73,6 @@
           #planet-icon {
             width: clamp(2.2rem, 1rem + 0.8vw, 3.5rem);
             align-self: flex-end;
-            padding-bottom: 1rem;
           }
 
           h3 {
@@ -199,11 +198,11 @@
           .measure {
             align-items: center;
             text-align: center;
+            justify-content: center;
 
             #planet-icon {
               width: 2rem;
               align-self: flex-end;
-              padding-bottom: 1.2rem;
             }
 
             .measure-text {

@@ -36,7 +36,12 @@ const Card = ({
         <div className="single-planet-figure">
           <div className="measure">
             <h3>{moons}</h3>
-            <Image alt="planet icon" src={PLANET} id="planet-icon"></Image>
+            <Image
+              alt="planet icon"
+              src={PLANET}
+              id="planet-icon"
+              style={{ justifyContent: "center", alignSelf: "center" }}
+            ></Image>
           </div>
           <h3 className="description-text">Moons</h3>
         </div>
