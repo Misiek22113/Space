@@ -2,7 +2,7 @@
 
 React project created for people who would like to learn about the Space
 
-## [Effect of my work](https://astro-journey.netlify.app/)
+## [Effect of my work](solar-system-journey.vercel.app/)
 
 What I have used:
 
