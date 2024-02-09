@@ -7,9 +7,8 @@ React project created for people who would like to learn about the Space
 What I have used:
 
 - React
-- Vite
+- NextJs
 - TypeScript
 - Framer Motion
 - SCSS
-- React Router
 - React-Spring
