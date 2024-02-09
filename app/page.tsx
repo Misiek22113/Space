@@ -3,21 +3,11 @@ import HomeInfo from "@/components/HomeInfo/HomeInfo";
 import "./HomePage.scss";
 import "../styles/Button.scss";
 import { motion } from "framer-motion";
-import Background from "../public/home-page/Home_Page_1920_dark.jpg";
-import Image from "next/image";
 import Link from "next/link";
 
 const HomePage = () => {
   return (
     <>
-      <Image
-        alt="homepage background"
-        src={Background}
-        className="background"
-        placeholder="blur"
-        fill
-        priority
-      />
       <div className="home-page-content">
         <div className="home-info-section">
           <motion.div
