@@ -45,3 +45,10 @@ $mobile-screen-size: 65em;
   border-radius: 3px;
   height: 9rem;
 }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

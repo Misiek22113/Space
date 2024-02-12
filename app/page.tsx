@@ -4,7 +4,7 @@ import "./HomePage.scss";
 import "../styles/button.scss";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Background from "../public/home-page/Home_Page_1920_dark.jpg";
+import Background from "../public/home-page/home_page_dark.png";
 import Image from "next/image";
 
 const HomePage = () => {
@@ -16,8 +16,8 @@ const HomePage = () => {
         className="background"
         placeholder="blur"
         fill
+        layout="fill"
         priority
-        sizes="100vw"
         style={{ objectFit: "cover" }}
       />
       <div className="home-page-content">
