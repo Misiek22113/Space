@@ -1,7 +1,6 @@
 @import "../styles/globals.scss";
 
 .background {
-  object-fit: cover;
   z-index: -1;
 }
 
@@ -10,15 +9,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-
-  .home-info-section {
-    padding-top: 5vh;
-  }
-
-  #button-container {
-    height: 20vh;
-  }
+  padding-bottom: 2rem;
+  align-self: center;
+  height: 100%;
 }
 
 @media (max-width: $mobile-screen-size) {
