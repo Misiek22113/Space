@@ -1,0 +1,40 @@
+@import "../../styles/globals.scss";
+
+.background-moon {
+  .background-img {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+  }
+
+  .go-back-container {
+    display: flex;
+    position: absolute;
+    color: $neutral-color-95;
+    top: 7rem;
+    left: 2.4rem;
+
+    .arrow-img {
+      width: 3rem;
+    }
+  }
+
+  .card-section {
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: $mobile-screen-size) {
+  .background-moon {
+    .background {
+      width: fit-content;
+    }
+
+    .card-section {
+      padding-top: 4rem;
+    }
+  }
+}

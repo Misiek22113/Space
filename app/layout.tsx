@@ -20,12 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inria.className}>
-        <Suspense>
-          <Navbar />
-        </Suspense>
-        {children}
-      </body>
+      <body className={inria.className}>{children}</body>
     </html>
   );
 }

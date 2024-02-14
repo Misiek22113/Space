@@ -14,7 +14,7 @@ $primary-font-weight: 400;
 
 $transition-time: 0.2s;
 
-$mobile-screen-size: 65em;
+$mobile-screen-size: 1200px;
 
 @mixin page-background-image($url-path: "./") {
   background: url($url-path);
@@ -47,8 +47,11 @@ $mobile-screen-size: 65em;
 }
 
 body,
-html {
+html,
+#root {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
