@@ -2,7 +2,15 @@ import React, { useRef, useEffect } from "react";
 
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-export default function Astronaut({ ref }: { ref: any }) {
+export default function Astronaut({
+  ref,
+  position,
+  scale,
+}: {
+  ref: any;
+  position: number[];
+  scale: number;
+}) {
   const group = useRef();
 
   const { scene, animations } = useGLTF("./three/astronaut.glb", true);
@@ -17,11 +25,11 @@ export default function Astronaut({ ref }: { ref: any }) {
   return (
     <mesh ref={ref}>
       <primitive
-        position={[-100, -80, -70]}
+        position={position}
         ref={group}
         object={scene}
         dispose={null}
-        scale={80}
+        scale={scale}
         rotation={[0, 0.5, 0]}
       />
     </mesh>
