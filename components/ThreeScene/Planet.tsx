@@ -28,14 +28,12 @@ export function Model({
   });
 
   return (
-    <>
-      <primitive
-        object={gltf.scene}
-        ref={planetRef}
-        scale={scale}
-        position={position}
-      />
-    </>
+    <primitive
+      object={gltf.scene}
+      ref={planetRef}
+      scale={scale}
+      position={position}
+    />
   );
 }
 
