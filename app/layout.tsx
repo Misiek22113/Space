@@ -1,9 +1,15 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "../styles/globals.scss";
 import { Inria_Serif } from "next/font/google";
-import { Suspense } from "react";
+import { Orbitron } from "next/font/google";
+// import { Suspense } from "react";
 
 const inria = Inria_Serif({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const orbitron = Orbitron({
   subsets: ["latin"],
   weight: "400",
 });
@@ -20,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inria.className}>{children}</body>
+      <body className={orbitron.className}>{children}</body>
     </html>
   );
 }

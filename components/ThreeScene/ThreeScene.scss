@@ -3,3 +3,12 @@
   height: 100%;
   background-color: #0f0f0f;
 }
+
+.compass-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}

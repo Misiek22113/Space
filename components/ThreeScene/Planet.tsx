@@ -19,10 +19,10 @@ export function Model({
 
   useFrame(() => {
     if (rotateDirection === "right") {
-      planetRef.current.rotation.x += 0.001;
+      // planetRef.current.rotation.x += 0.001;
       planetRef.current.rotation.y -= 0.001;
     } else {
-      planetRef.current.rotation.x -= 0.001;
+      // planetRef.current.rotation.x -= 0.001;
       planetRef.current.rotation.y += 0.001;
     }
   });
