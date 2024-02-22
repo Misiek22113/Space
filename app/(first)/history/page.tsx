@@ -14,7 +14,7 @@ import {
   FIRST_SPACEWALK,
   GEMINI,
   APOLLO,
-} from "../../utils/HistoryData";
+} from "../../../utils/HistoryData";
 import { useRef } from "react";
 import Image from "next/image";
 import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";

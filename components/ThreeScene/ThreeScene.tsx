@@ -1,6 +1,6 @@
 import { Suspense, useRef } from "react";
 import "./ThreeScene.scss";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { Model } from "./Planet";
 import Astronaut from "./Astronaut";
 import Layer from "./Layer";
@@ -13,12 +13,19 @@ const ThreeScene = () => {
   const astronautRef = useRef();
 
   return (
-    <div className="background">
-      <HomeInfo />
-      <Image alt="compass" src={COMPASS} id="compass-icon"></Image>
+    <div className="three-page-background">
+      <div className="background">
+        {/* <HomeInfo /> */}
+        <div className="site-content">
+          <div className="compass-container">
+            <Image alt="compass" src={COMPASS} id="compass-icon" />
+          </div>
+        </div>
+      </div>
       <Canvas
         orthographic={true}
         camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 100] }}
+        className="canvas-container"
       >
         <Suspense fallback={null}>
           <Layer layer={0}>
@@ -52,6 +59,7 @@ const ThreeScene = () => {
               path="./three/terrestial_planet.glb"
               position={[200, -150, 0]}
               scale={90}
+              rotateDirection="right"
             />
             <Model
               path="./three/ice.glb"
@@ -63,21 +71,25 @@ const ThreeScene = () => {
               path="./three/barren.glb"
               position={[-200, -200, 0]}
               scale={50}
+              rotateDirection="left"
             />
             <Model
               path="./three/cloud_planet.glb"
               position={[-800, -400, 8]}
               scale={30}
+              rotateDirection="right"
             />
             <Model
               path="./three/dirt_planet.glb"
               position={[-620, 100, -20]}
               scale={60}
+              rotateDirection="left"
             />
             <Model
               path="./three/mustafar.glb"
               position={[700, -400, 10]}
               scale={30}
+              rotateDirection="left"
             />
           </Layer>
           <Layer layer={1}>
@@ -86,23 +98,6 @@ const ThreeScene = () => {
               intensity={3}
               position={[-600, 200, 0]}
             />
-            {/* <directionalLight
-              color="#ffffff"
-              intensity={0.3}
-              position={[600, 700, 0]}
-            /> */}
-            {/* <directionalLight
-              intensity={1}
-              color={"red"}
-              position={[100, 10, 2]}
-              target={astronautRef.current}
-            />
-            <directionalLight
-              intensity={1}
-              color={"blue"}
-              position={[-100, 10, 2]}
-              target={astronautRef.current}
-            /> */}
             <Astronaut
               ref={astronautRef}
               position={[-150, -100, -100]}
