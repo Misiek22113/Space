@@ -1,14 +1,14 @@
 import { Suspense, useRef } from "react";
 import "./ThreeScene.scss";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { Model } from "./Planet";
 import Astronaut from "./Astronaut";
 import Layer from "./Layer";
 import { Stars } from "@react-three/drei";
-import HomeInfo from "../HomeInfo/HomeInfo";
 import COMPASS from "../../public/three/compass.svg";
 import SPACE_TRAVEL from "../../public/three/space-travel.png";
 import Image from "next/image";
+import Button from "../Button/Button";
 
 const ThreeScene = () => {
   const astronautRef = useRef();
@@ -22,18 +22,20 @@ const ThreeScene = () => {
               alt="compass"
               src={COMPASS}
               id="compass-icon"
-              width={50}
-              height={50}
+              width={55}
+              height={55}
             />
           </div>
           <div className="space-expedition-container">
-            <Image
-              alt="compass"
-              src={SPACE_TRAVEL}
-              id="compass-icon"
-              width={65}
-              height={65}
-            />
+            <div className="space-journey-icon-container">
+              <Image
+                alt="space-travel"
+                src={SPACE_TRAVEL}
+                id="space-journey-icon"
+                width={65}
+                height={65}
+              />
+            </div>
             <div className="journey-data">
               <p>
                 <span>EXPEDITION</span> DATA
@@ -48,9 +50,12 @@ const ThreeScene = () => {
         </div>
       </div>
       <div className="background">
-        <div className="home-typography">
-          <h1>THE SPACE</h1>
-          <h2>WE LIVE IN</h2>
+        <div className="home-content-container">
+          <div className="home-typography">
+            <h1>THE SPACE</h1>
+            <h2>WE LIVE IN</h2>
+          </div>
+          <Button />
         </div>
       </div>
       <Canvas
