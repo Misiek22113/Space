@@ -9,6 +9,8 @@ What I have used:
 - React
 - NextJs
 - TypeScript
+- React Three Fiber
+- Three.js
 - Framer Motion
 - SCSS
 - React-Spring
