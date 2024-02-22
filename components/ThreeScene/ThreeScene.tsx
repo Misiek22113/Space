@@ -9,6 +9,7 @@ import COMPASS from "../../public/three/compass.svg";
 import SPACE_TRAVEL from "../../public/three/space-travel.png";
 import Image from "next/image";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 const ThreeScene = () => {
   const astronautRef = useRef();
@@ -55,7 +56,9 @@ const ThreeScene = () => {
             <h1>THE SPACE</h1>
             <h2>WE LIVE IN</h2>
           </div>
-          <Button />
+          <Link href="/solar-system">
+            <Button />
+          </Link>
         </div>
       </div>
       <Canvas

@@ -22,8 +22,8 @@ const Navbar = () => {
       setActivePath("/");
     } else if (pathName == "/solar-system") {
       setActivePath("/solar-system");
-    } else if (pathName == "/history") {
-      setActivePath("/history");
+    } else if (pathName == "/solar-system/history") {
+      setActivePath("/solar-system/history");
     }
   }, [pathName, searchParams]);
 
@@ -60,9 +60,11 @@ const Navbar = () => {
         </li>
         <li className="list-element">
           <Link
-            href="/history"
+            href="/solar-system/history"
             className={
-              activePath == "/history" ? "nav-text-underlined" : "nav-text"
+              activePath == "/solar-system/history"
+                ? "nav-text-underlined"
+                : "nav-text"
             }
           >
             HUMANS IN SPACE

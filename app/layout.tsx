@@ -1,8 +1,6 @@
-import Navbar from "@/components/Navbar/Navbar";
 import "../styles/globals.scss";
 import { Inria_Serif } from "next/font/google";
 import { Orbitron } from "next/font/google";
-// import { Suspense } from "react";
 
 const inria = Inria_Serif({
   subsets: ["latin"],
@@ -16,7 +14,7 @@ const orbitron = Orbitron({
 
 export const metadata = {
   title: "Solar System",
-  description: "Explore the solar system with this interactive website!",
+  description: "Explore the solar system with this website!",
 };
 
 export default function RootLayout({

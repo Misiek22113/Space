@@ -92,7 +92,7 @@ const SolarSystem = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <div>
-            <Link href="/moon">
+            <Link href="/solar-system/moon">
               <Image alt="moon" src={MOON_IMG} className="moon-img"></Image>
             </Link>
           </div>
