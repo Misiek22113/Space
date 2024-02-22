@@ -31,7 +31,7 @@ export default function Astronaut({
         object={scene}
         dispose={null}
         scale={scale}
-        rotation={[0, 0.9, 0]}
+        rotation={[0.2, -0.9, 0]}
       />
     </mesh>
   );

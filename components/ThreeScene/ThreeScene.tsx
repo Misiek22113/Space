@@ -83,20 +83,8 @@ const ThreeScene = () => {
             />
             <ambientLight intensity={1} />
             <Model
-              path="./three/alien_planet.glb"
-              position={[-700, 450, 10]}
-              rotateDirection="right"
-              scale={30}
-            />
-            <Model
-              path="./three/lava_planet.glb"
-              position={[100, 400, 10]}
-              rotateDirection="left"
-              scale={50}
-            />
-            <Model
               path="./three/terrestial_planet.glb"
-              position={[200, -150, 0]}
+              position={[-200, -150, 0]}
               scale={90}
               rotateDirection="right"
             />
@@ -105,18 +93,6 @@ const ThreeScene = () => {
               position={[800, 250, 10]}
               rotateDirection="right"
               scale={50}
-            />
-            <Model
-              path="./three/barren.glb"
-              position={[-200, -200, 0]}
-              scale={50}
-              rotateDirection="left"
-            />
-            <Model
-              path="./three/cloud_planet.glb"
-              position={[-800, -400, 8]}
-              scale={30}
-              rotateDirection="right"
             />
             <Model
               path="./three/dirt_planet.glb"
@@ -135,11 +111,16 @@ const ThreeScene = () => {
             <directionalLight
               color="#D7D7D7"
               intensity={3}
-              position={[-600, 200, 0]}
+              position={[600, 200, 0]}
+            />
+            <directionalLight
+              color="#D7D7D7"
+              intensity={0.3}
+              position={[-600, -200, 0]}
             />
             <Astronaut
               ref={astronautRef}
-              position={[-150, -100, -100]}
+              position={[150, -100, -100]}
               scale={100}
             />
           </Layer>
