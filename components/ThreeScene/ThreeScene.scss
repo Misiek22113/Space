@@ -26,8 +26,58 @@
 
     .compass-container {
       position: absolute;
-      left: 0;
+      right: 0;
       bottom: 0;
+    }
+
+    .space-expedition-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      .journey-data {
+        padding: 0;
+        letter-spacing: 0.2rem;
+        color: white;
+        margin-top: 2rem;
+
+        .data-paragraph {
+          font-size: 0.625rem;
+        }
+      }
+    }
+  }
+
+  .home-typography {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 1000;
+
+    h1,
+    h2 {
+      display: inline-block;
+    }
+
+    h1 {
+      letter-spacing: 0.5rem;
+      font-size: 8rem;
+      margin: 0;
+      line-height: 0.9;
+    }
+
+    h2 {
+      letter-spacing: 0.5rem;
+      font-size: 7rem;
+      margin: 0;
+      word-spacing: 1rem;
     }
   }
 

@@ -7,6 +7,7 @@ import Layer from "./Layer";
 import { Stars } from "@react-three/drei";
 import HomeInfo from "../HomeInfo/HomeInfo";
 import COMPASS from "../../public/three/compass.svg";
+import SPACE_TRAVEL from "../../public/three/space-travel.png";
 import Image from "next/image";
 
 const ThreeScene = () => {
@@ -15,11 +16,41 @@ const ThreeScene = () => {
   return (
     <div className="three-page-background">
       <div className="background">
-        {/* <HomeInfo /> */}
         <div className="site-content">
           <div className="compass-container">
-            <Image alt="compass" src={COMPASS} id="compass-icon" />
+            <Image
+              alt="compass"
+              src={COMPASS}
+              id="compass-icon"
+              width={50}
+              height={50}
+            />
           </div>
+          <div className="space-expedition-container">
+            <Image
+              alt="compass"
+              src={SPACE_TRAVEL}
+              id="compass-icon"
+              width={65}
+              height={65}
+            />
+            <div className="journey-data">
+              <p>
+                <span>EXPEDITION</span> DATA
+              </p>
+              <p className="data-paragraph">{"> "}COMMUNICATION: ESTABLISHED</p>
+              <p className="data-paragraph">
+                {"> "}COORDINATES: 1.55, -0.08, -5.94 kpc
+              </p>
+              <p className="data-paragraph">{"> "}DESTINATION: UNKNOWN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="background">
+        <div className="home-typography">
+          <h1>THE SPACE</h1>
+          <h2>WE LIVE IN</h2>
         </div>
       </div>
       <Canvas
