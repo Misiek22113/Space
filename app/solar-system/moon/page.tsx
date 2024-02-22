@@ -1,10 +1,10 @@
 "use client";
 import Card from "@/components/Card/Card";
 import "./MoonPage.scss";
-import MOON from "../../utils/MoonInfo";
+import MOON from "../../../utils/MoonInfo";
 import { motion } from "framer-motion";
-import BACK_ARROW from "../../public/moon-page/arrow.svg";
-import STARS from "../../public/moon-page/cosmos.jpg";
+import BACK_ARROW from "../../../public/moon-page/arrow.svg";
+import STARS from "../../../public/moon-page/cosmos.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
