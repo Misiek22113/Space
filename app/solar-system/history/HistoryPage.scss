@@ -10,13 +10,14 @@
 }
 
 .history-wrapper {
+  letter-spacing: 0.2rem;
   .parallax-cotent {
     margin-top: 0;
     padding-top: 10vh;
   }
 
   .take-off-text {
-    font-size: clamp(7rem, 1rem + 15vw, 40rem);
+    font-size: 13rem;
     color: $neutral-color-95;
     justify-content: center;
     text-align: center;
@@ -107,6 +108,9 @@
   }
 
   .history-wrapper {
+    .take-off-text {
+      font-size: 5rem;
+    }
     .spacecraft-container {
       .spacecraft-image {
         padding-left: 0;
@@ -115,17 +119,17 @@
     }
 
     .date-text {
-      font-size: clamp(4rem, 1rem + 10vw, 5rem);
+      font-size: 4rem;
       margin-left: 35%;
     }
 
     .mission-text {
-      font-size: clamp(2rem, 1rem + 5vw, 4rem);
+      font-size: 2rem;
       margin: 0 0 1rem 35%;
     }
 
     .mission-content {
-      font-size: clamp(1rem, 0.5rem + 3vw, 2rem);
+      font-size: 1rem;
       padding: 0 1rem;
     }
 
