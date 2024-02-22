@@ -1,13 +1,9 @@
 "use client";
 import ThreeScene from "@/components/ThreeScene/ThreeScene";
-import "./ThreePage.scss";
+import "./threePage.scss";
 
 const ThreePage = () => {
-  return (
-    <div className="three-page-background">
-      <ThreeScene />
-    </div>
-  );
+  return <ThreeScene />;
 };
 
 export default ThreePage;

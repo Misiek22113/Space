@@ -24,6 +24,7 @@ export default function Astronaut({
 
   return (
     <mesh ref={ref}>
+      <ambientLight intensity={0.5} />
       <primitive
         position={position}
         ref={group}
