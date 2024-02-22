@@ -1,0 +1,67 @@
+@import "../../styles/globals.scss";
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.button {
+  width: 8.2rem;
+  aspect-ratio: 1.2 / 0.2;
+  background: $background-button;
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    background: $neutral-color-95;
+    color: $background-button;
+
+    &::before,
+    &::after {
+      inset: 0;
+    }
+  }
+}
+
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  inset: -0.1rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    $neutral-color-95,
+    $background-button,
+    $background-button,
+    $background-button,
+    $neutral-color-95
+  );
+  border-radius: inherit;
+  animation: rotation 10s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+@media (max-width: $mobile-screen-size) {
+  .button {
+    width: 6rem;
+    line-height: 2rem;
+    font-size: 0.6rem;
+  }
+}
