@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Model } from "./Planet";
 import Astronaut from "./Astronaut";
 import Layer from "./Layer";
-import { Stars } from "@react-three/drei";
+import { Stars, useGLTF } from "@react-three/drei";
 import COMPASS from "../../public/three/compass.svg";
 import SPACE_TRAVEL from "../../public/three/space-travel.png";
 import Image from "next/image";
@@ -38,9 +38,7 @@ const ThreeScene = () => {
               />
             </div>
             <div className="journey-data">
-              <p>
-                <span>EXPEDITION</span> DATA
-              </p>
+              {/* <p>EXPEDITION DATA</p> */}
               <p className="data-paragraph">{"> "}COMMUNICATION: ESTABLISHED</p>
               <p className="data-paragraph">
                 {"> "}COORDINATES: 1.55, -0.08, -5.94 kpc
@@ -83,10 +81,11 @@ const ThreeScene = () => {
             />
             <ambientLight intensity={1} />
             <Model
-              path="./three/terrestial_planet.glb"
+              path="./three/terrestrial_planet.glb"
               position={[-200, -150, 0]}
               scale={90}
               rotateDirection="right"
+              rotate={[0, 0, 0]}
             />
             <Model
               path="./three/ice.glb"
@@ -129,5 +128,10 @@ const ThreeScene = () => {
     </div>
   );
 };
+
+useGLTF.preload("./three/mustafar.glb");
+useGLTF.preload("./three/terrestrial_planet.glb");
+useGLTF.preload("./three/ice.glb");
+useGLTF.preload("./three/dirt_planet.glb");
 
 export default ThreeScene;
