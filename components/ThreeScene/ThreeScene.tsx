@@ -22,14 +22,14 @@ const ThreeScene = () => {
         >
           <Suspense fallback={null}>
             <Layer layer={0}>
-              <Stars
+              {/* <Stars
                 radius={100}
                 fade={true}
                 saturation={8}
                 factor={0}
                 depth={500}
                 count={20000}
-              />
+              /> */}
               <directionalLight
                 color="#ffffff"
                 intensity={1.5}
@@ -83,7 +83,6 @@ const ThreeScene = () => {
         </Canvas>
         <CustomLoader />
       </div>
-      {/* <Loader /> */}
     </>
   );
 };

@@ -3,7 +3,7 @@ import COMPASS from "../../public/three/compass.svg";
 import SPACE_TRAVEL from "../../public/three/space-travel.png";
 import Image from "next/image";
 
-const SceneTypography = async () => {
+const SceneTypography = () => {
   return (
     <>
       <div className="background">
