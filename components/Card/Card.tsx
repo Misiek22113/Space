@@ -3,17 +3,19 @@ import { CardPlanetInfo } from "../../utils/Intefaces";
 import PLANET from "../../public/card/planet.svg";
 import Image from "next/image";
 
-const Card = ({
-  planet,
-  overview,
-  distance,
-  moons,
-  years,
-  planetImg,
-  onRight,
-  showInfo,
-  lengthDays,
-}: CardPlanetInfo) => {
+const Card = ({ CardPlanetInfo }: { CardPlanetInfo: CardPlanetInfo }) => {
+  const {
+    planet,
+    overview,
+    distance,
+    moons,
+    years,
+    planetImg,
+    onRight,
+    showInfo,
+    lengthDays,
+  } = CardPlanetInfo;
+
   const displayPlanetFigures = () => {
     return (
       <div className="planet-figures">

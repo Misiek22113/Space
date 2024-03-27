@@ -1,14 +1,16 @@
 @import "../../../styles/globals.scss";
 
 .background-moon {
-  .background-img {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    position: fixed;
-  }
+  background-color: rgb(17, 16, 16);
+  height: 100%;
+  // .background-img {
+  //   top: 0;
+  //   left: 0;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   z-index: -1;
+  //   position: fixed;
+  // }
 
   .go-back-container {
     display: flex;

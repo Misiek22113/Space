@@ -8,16 +8,18 @@ import STARS from "../../../public/moon-page/cosmos.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
+//TODO: Add the Moon info to the MoonPage
+
 const MoonPage = () => {
   return (
     <div className="background-moon">
-      <Image
+      {/* <Image
         alt="background"
         src={STARS}
         className="background-img"
         priority
         placeholder="blur"
-      />
+      /> */}
       <div className="go-back-container">
         <Link href="/solar-system">
           <Image alt="moon img" src={BACK_ARROW} className="arrow-img"></Image>
@@ -29,17 +31,18 @@ const MoonPage = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "circOut", duration: 0.6 }}
       >
-        <Card
+        {/* <Card
           planet={MOON.planet}
           overview={MOON.overview}
           distance={MOON.distance}
           moons={MOON.weight}
           years={MOON.age}
           planetImg={MOON.planetImgPath}
-          onRight={true}
           showInfo={false}
+          onRight={true}
           lengthDays={false}
-        />
+          CardPlanetInfo={{ ...MOON, onRight: true, lengthDays: false }}
+        /> */}
       </motion.div>
     </div>
   );
