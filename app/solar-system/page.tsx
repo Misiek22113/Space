@@ -19,13 +19,6 @@ import PlanetAnimation from "@/components/AnimationWrapper/PlanetAnimation";
 const SolarSystem = () => {
   return (
     <>
-      {/* <Image
-        alt="background"
-        src={Stars}
-        className="solar-system-background"
-        placeholder="blur"
-        priority
-      ></Image> */}
       <div className="planet-section">
         <PlanetAnimation>
           <Card
