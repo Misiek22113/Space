@@ -7,8 +7,8 @@ export interface CardPlanetInfo {
   moons: number;
   years: number;
   planetImg: StaticImageData;
-  onRight: boolean;
   showInfo: boolean;
+  onRight: boolean;
   lengthDays: boolean;
 }
 
