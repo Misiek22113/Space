@@ -5,9 +5,8 @@ import { Model } from "./Planet";
 import Astronaut from "./Astronaut";
 import Layer from "./Layer";
 import { Loader, Stars, useGLTF } from "@react-three/drei";
-import Button from "../Button/Button";
-import Link from "next/link";
 import SceneTypography from "./SceneTypography";
+import CustomLoader from "./Loader";
 
 const ThreeScene = () => {
   const astronautRef = useRef();
@@ -16,17 +15,6 @@ const ThreeScene = () => {
     <>
       <div className="three-page-background">
         <SceneTypography />
-        <div className="background">
-          <div className="home-content-container">
-            <div className="home-typography">
-              <h1>THE SPACE</h1>
-              <h2>WE LIVE IN</h2>
-            </div>
-            <Link href="/solar-system">
-              <Button />
-            </Link>
-          </div>
-        </div>
         <Canvas
           orthographic={true}
           camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 100] }}
@@ -93,8 +81,9 @@ const ThreeScene = () => {
             </Layer>
           </Suspense>
         </Canvas>
+        <CustomLoader />
       </div>
-      <Loader />
+      {/* <Loader /> */}
     </>
   );
 };
